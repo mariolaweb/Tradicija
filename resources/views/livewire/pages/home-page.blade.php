@@ -74,8 +74,8 @@
             </div>
 
             {{-- Novi pokušaj --}}
-            <div class="w-full max-w-3xl px-4 mx-auto mt-10">
-                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-5">
+            {{-- <div class="w-full max-w-3xl px-4 mx-auto mt-10">
+                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-5"> --}}
 
                     {{-- Restoran --}}
                     {{-- <a href="#"
@@ -132,15 +132,15 @@
                         </div>
                     </a> --}}
 
-                </div>
-            </div>
+                {{-- </div>
+            </div> --}}
 
         </div>
     </header>
 
 
     <section class="w-full px-2 pb-8 text-white bg-black">
-        <blockquote class="relative max-w-3xl p-4 mx-auto mt-8 text-xl leading-relaxed text-center">
+        <blockquote class="relative max-w-3xl p-4 mx-auto text-xl leading-relaxed text-center md:mt-8">
             <!-- veliki navodnik -->
             <span class="absolute font-serif text-6xl italic pointer-events-none select-none -top-2 left-5">“</span>
 
