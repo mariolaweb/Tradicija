@@ -7,7 +7,7 @@
 
         <div class="z-20 flex flex-col items-center w-full mx-auto max-w-7xl pt-28 md:pt-32">
 
-            <div class="pt-20 rounded-2xl">
+            <div class="pt-24 rounded-2xl">
                 <img src="{{ asset('images/svg/logo-tradicija-full-white.svg') }}" class="h-48 mx-auto lg:h-72"
                     alt="Restoran Tradicija Banja Luka" />
 
@@ -16,7 +16,7 @@
                 </h1>
             </div>
 
-            <div class="w-full max-w-3xl px-4 mx-auto">
+            <div class="w-full max-w-3xl px-4 mx-auto mt-10">
                 <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-5">
 
                     {{-- Restoran --}}
