@@ -1,0 +1,58 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Product extends Model
+{
+    protected $fillable = [
+        'name',
+        'slug',
+        'category_id',
+        'SKU',
+        // 'barcode', // optional
+        // 'specifications', // optional, json (for unstructured data)
+        'description',
+        // 'b2b_price', // optional
+        'regular_price',
+        'sale_price',
+        'quantity',
+        // 'stock_status', // optional: 'in_stock', 'out_of_stock', etc.
+        // 'featured', // optional: bool
+        'is_active',
+        // 'is_outlet', // optional
+        // 'is_new', // optional
+        'image',
+        'images',
+        'meta_description',
+        'meta_keywords',
+
+        // --- optional filter-friendly structured fields ---
+        // 'weight', // optional: decimal (e.g. 1.25)
+        // 'dimensions', // optional: string or JSON (e.g. "30x20x10 cm")
+        // 'material', // optional: string (e.g. "aluminum")
+        // 'delivery_time', // optional: string (e.g. "2–3 days")
+        // 'video_url', // optional: string (e.g. YouTube)
+        // 'manual_url', // optional: string (PDF link)
+    ];
+
+    protected $casts = [
+        'images' => 'array',
+        'is_active' => 'boolean',
+        // 'featured' => 'boolean',
+        // 'is_outlet' => 'boolean',
+        // 'is_new' => 'boolean',
+        // 'specifications' => 'array',
+    ];
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
+
+    // public function brand()
+    // {
+    //     return $this->belongsTo(Brand::class);
+    // }
+}

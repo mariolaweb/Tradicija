@@ -1,0 +1,209 @@
+<div class="flex flex-col w-full mx-auto mt-6 md:w-4/5">
+
+    <div class="min-h-screen py-12">
+        <div class="max-w-3xl mx-auto sm:px-6 md:mt-10 lg:px-8">
+            <p class="py-5 text-2xl font-medium text-center uppercase">Spisak kategorija {{ config('app.name') }}</p>
+
+            {{-- Button za dodavanje kategorije --}}
+            <div class="flex items-center justify-center p-2 md:justify-end">
+                <button x-data x-on:click="$wire.call('resetForm'); $dispatch('open-modal', 'create-category')"
+                    class="rounded-md bg-blue-600 px-4 py-1.5 text-sm uppercase text-white hover:bg-gray-800 focus:outline-none">
+                    Dodaj novu kategoriju
+                </button>
+            </div>
+
+            {{-- Spisak kategorija --}}
+            <div class="container w-full px-2">
+                <div
+                    class="bg-primary border-primary mt-1 flex cursor-pointer items-center justify-between rounded-md bg-gray-700 px-4 py-1.5 text-xs uppercase text-white md:px-12 md:text-sm xl:text-base">
+                    <div class="flex items-center space-x-2">
+                        <p class="mt-0.5">Naziv kategorije</p>
+                    </div>
+                    <p>Podešavanja</p>
+                </div>
+
+                @foreach ($categories as $category)
+                    <div class="mt-2 space-y-2 font-sans antialiased text-gray-900">
+                        <div class="flex items-center justify-between flex-1 w-full px-3 py-1 bg-white rounded shadow">
+                            <div class="flex items-center w-full py-1 ml-4 cursor-pointer">
+                                {{ $category->name }}
+                            </div>
+                            <div class="flex space-x-4 whitespace-nowrap px-4 py-0.5">
+                                <div wire:click="loadModel({{ $category->id }})"
+                                    class="mt-0.5 flex cursor-pointer items-center">
+                                    <svg width="512" height="512" x="0" y="0" viewBox="0 0 25 25.001"
+                                        style="enable-background:new 0 0 512 512" xml:space="preserve" class="size-5">
+                                        <g>
+                                            <path
+                                                d="m24.38 10.175-2.231-.268a9.962 9.962 0 0 0-.992-2.401l1.387-1.763a.723.723 0 0 0-.057-.934l-2.299-2.3a.726.726 0 0 0-.934-.057l-1.766 1.389a9.825 9.825 0 0 0-2.396-.99L14.825.62a.724.724 0 0 0-.7-.62h-3.252a.723.723 0 0 0-.699.62l-.268 2.231a9.904 9.904 0 0 0-2.398.991L5.743 2.455a.724.724 0 0 0-.933.056l-2.3 2.301a.725.725 0 0 0-.054.934L3.842 7.51a9.879 9.879 0 0 0-.991 2.4l-2.23.267a.724.724 0 0 0-.621.7v3.252c0 .344.279.657.621.699l2.231.268a9.94 9.94 0 0 0 .991 2.396l-1.386 1.766a.726.726 0 0 0 .057.934l2.296 2.301a.726.726 0 0 0 .933.057l1.766-1.39c.744.43 1.548.765 2.398.991l.268 2.23c.041.342.355.62.699.62h3.252a.721.721 0 0 0 .699-.62l.268-2.23a9.928 9.928 0 0 0 2.398-.991l1.766 1.387c.271.212.69.187.933-.056l2.299-2.301a.724.724 0 0 0 .056-.935l-1.388-1.764a9.893 9.893 0 0 0 .992-2.397l2.23-.268a.722.722 0 0 0 .621-.699v-3.252a.72.72 0 0 0-.62-.7zM12.501 18.75a6.25 6.25 0 1 1 0-12.5 6.25 6.25 0 0 1 0 12.5z"
+                                                fill="currentColor" data-original="#000000" class=""></path>
+                                        </g>
+                                    </svg>
+                                    <div class="hidden p-1 text-xs uppercase md:flex">
+                                        Uredi
+                                    </div>
+                                </div>
+                                <div wire:click="confirmDelete({{ $category->id }})"
+                                    class="mr-1.5 mt-0.5 flex cursor-pointer items-center">
+                                    <svg height="512" x="0" y="0" viewBox="0 0 512 512"
+                                        style="enable-background:new 0 0 512 512" xml:space="preserve" class="size-5">
+                                        <g>
+                                            <path fill="#fc0005" fill-rule="evenodd"
+                                                d="M170.8 14.221A14.21 14.21 0 0 1 185 .014L326.991.006a14.233 14.233 0 0 1 14.2 14.223v35.117H170.8zm233.461 477.443a21.75 21.75 0 0 1-21.856 20.33H127.954a21.968 21.968 0 0 1-21.854-20.416L84.326 173.06H427.5l-23.234 318.6zm56.568-347.452H51.171v-33A33.035 33.035 0 0 1 84.176 78.2l343.644-.011a33.051 33.051 0 0 1 33 33.02v33zm-270.79 291.851a14.422 14.422 0 1 0 28.844 0V233.816a14.42 14.42 0 0 0-28.839-.01v202.257zm102.9 0a14.424 14.424 0 1 0 28.848 0V233.816a14.422 14.422 0 0 0-28.843-.01z"
+                                                data-original="#fc0005" class=""></path>
+                                        </g>
+                                    </svg>
+                                    <div class="hidden p-1 text-xs uppercase md:flex">
+                                        Obriši
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+
+            </div>
+        </div>
+    </div>
+
+    {{-- Create & Update modal --}}
+    <x-modal name="create-category" wire:ignore.self>
+        <div class="p-6">
+            @if ($modelId)
+                <div class="w-full p-2 font-semibold text-center text-white uppercase bg-blue-600 rounded-md">
+                    <p name="title">{{ __('Izmjena podataka o kategoriji') }}</p>
+                </div>
+            @else
+                <div class="w-full p-2 font-semibold text-center text-white uppercase bg-gray-700 rounded-md">
+                    <p name="title">{{ __('Dodaj novu kategoriju') }}</p>
+                </div>
+            @endif
+
+            <div class="flex flex-col" x-data="{ activeTab: 'bs' }">
+                <p class="w-full pt-2 text-base font-semibold text-center">
+                    Izaberi jezik za unos prevoda
+                </p>
+                <p class="pb-3 italic text-center">
+                    - BS unos je obavezan i on prvi se upisuje! -
+                </p>
+
+                {{-- Dugmad za tabove --}}
+                <div class="grid justify-center grid-cols-6 gap-2 mb-4">
+                    @foreach (config('translatable.locales') as $locale)
+                        <div @click="activeTab = '{{ $locale }}'"
+                            class="inline-flex cursor-pointer items-center rounded-md border bg-gray-50 px-3 py-0.5 text-lg uppercase hover:border-blue-300 hover:bg-blue-300 hover:text-white dark:border-gray-700 dark:bg-black">
+                            <img src="{{ asset('images/svg/' . $locale . '.svg') }}" class="w-6 mr-2"
+                                alt="{{ $locale }}">
+                            {{ $locale }}
+                        </div>
+                    @endforeach
+                </div>
+
+                {{-- Tab sadržaj --}}
+                @foreach (config('translatable.locales') as $locale)
+                    <div x-show="activeTab === '{{ $locale }}'" x-cloak class="flex flex-col w-full mt-4"
+                        wire:key="tab-{{ $locale }}">
+                        {{-- Ime kategorije --}}
+                        <div class="flex">
+                            <div class="w-full">
+                                <div class="flex items-center">
+                                    <img src="{{ asset('images/svg/' . $locale . '.svg') }}" class="mb-0.5 mr-1 w-5"
+                                        alt="{{ $locale }}">
+                                    <p class="mr-1 text-sm font-medium uppercase">{{ $locale }} - </p>
+                                    <x-label for="name" value="{{ __('Ime Kategorije') }}" />
+                                </div>
+                                <x-input type="text" class="block w-full mt-1 dark:bg-gray-900"
+                                    wire:model="name.{{ $locale }}" />
+                                <x-input-error :messages="$errors->get('name')" class="mt-1 text-xs" />
+                            </div>
+                        </div>
+
+                        {{-- Slika za kategoriju --}}
+                        <div class="flex mt-4 flrx-col md:flex-row md:space-x-4">
+
+                            <div class="w-full mt-2 md:mt-0">
+                                <div class="flex">
+                                    <img src="{{ asset('images/svg/bs.svg') }}" alt="BS" class="w-5 mr-1">
+                                    <x-label for="name" value="{{ __('Img kategorije - slug za BS jezik') }}" />
+                                </div>
+                                <x-input type="text" class="mt-1 block w-full py-1.5 dark:bg-gray-900"
+                                    wire:model="cat_image" />
+                                <x-input-error :messages="$errors->get('cat_image')" class="mt-1 text-xs" />
+                            </div>
+                        </div>
+
+                        <p class="w-full pt-4 text-base font-semibold text-center">SEO - Optimizacija</p>
+
+                        {{-- Meta description --}}
+                        <div class="w-full mt-2">
+                            <div class="flex items-center">
+                                <img src="{{ asset('images/svg/' . $locale . '.svg') }}" class="mb-0.5 mr-1 w-5"
+                                    alt="{{ $locale }}">
+                                <p class="mr-1 text-sm font-medium uppercase">{{ $locale }} - </p>
+                                <x-label for="meta_description"
+                                    value="{{ __('Meta Opis za SEO (Nije obavezno)') }}" />
+                            </div>
+                            <div class="mt-1">
+                                <textarea rows="3"
+                                    class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-600 sm:text-sm dark:border-gray-700 dark:bg-gray-900"
+                                    wire:model="meta_description.{{ $locale }}"></textarea>
+                            </div>
+                            <x-input-error :messages="$errors->get('meta_description')" class="mt-1 text-xs" />
+                        </div>
+
+                        {{-- Meta keywords --}}
+                        <div class="w-full mt-2">
+                            <div class="flex items-center">
+                                <img src="{{ asset('images/svg/' . $locale . '.svg') }}" class="mb-0.5 mr-1 w-5"
+                                    alt="{{ $locale }}">
+                                <p class="mr-1 text-sm font-medium uppercase">{{ $locale }} - </p>
+                                <x-label for="meta_keywords"
+                                    value="{{ __('Meta Keywords za SEO (Nije obavezno)') }}" />
+                            </div>
+                            <div class="mt-1">
+                                <textarea rows="2"
+                                    class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-600 sm:text-sm dark:border-gray-700 dark:bg-gray-900"
+                                    wire:model="meta_keywords.{{ $locale }}"></textarea>
+                            </div>
+                            <x-input-error :messages="$errors->get('meta_keywords')" class="mt-1 text-xs" />
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+
+            <div class="flex justify-end mt-5">
+                <x-secondary-button x-on:click="$dispatch('close')">
+                    Odustani
+                </x-secondary-button>
+                <x-primary-button class="ml-3" wire:click="saveCategory">
+                    Sačuvaj
+                </x-primary-button>
+            </div>
+        </div>
+    </x-modal>
+
+    {{-- The Delete Modal --}}
+    <x-modal name="delete-category" maxWidth="2xl">
+        <div class="p-6">
+            <div class="w-full p-2 font-semibold text-center text-white uppercase bg-red-600 rounded-md">
+                <p name="title">
+                    {{ __('Obrišite ovu Kategoriju') }}
+                </p>
+            </div>
+            <div class="mt-6 text-lg text-center">
+                {{ __('Jeste li sigurni da želite obrisati ovu kategoriju?') }}
+                <br>
+            </div>
+
+            <div class="flex justify-end mt-6">
+                <x-secondary-button x-on:click="$dispatch('close')">
+                    Odustani
+                </x-secondary-button>
+                <x-danger-button class="ml-3" wire:click="deleteCategory">
+                    Obriši
+                </x-danger-button>
+            </div>
+        </div>
+    </x-modal>
+
+</div>

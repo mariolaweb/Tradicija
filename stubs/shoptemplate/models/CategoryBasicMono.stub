@@ -1,0 +1,17 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Category extends Model
+{
+    protected $fillable = [
+        'name',
+        'slug',
+        'cat_image',
+       // 'description', //koristiti samo kada nam zaista treba neki duži opis kategorija
+        'meta_description',
+        'meta_keywords',
+    ];
+}

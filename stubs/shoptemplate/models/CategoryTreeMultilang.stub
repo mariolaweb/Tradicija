@@ -1,0 +1,106 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Astrotomic\Translatable\Contracts\Translatable as ContractsTranslatable;
+use Astrotomic\Translatable\Translatable;
+
+class Category extends Model implements ContractsTranslatable
+{
+    use Translatable;
+
+    protected $fillable = [
+        'parent_id',
+        'cat_image',
+        'slug',
+        // 'description', // koristi ako ti treba duži opis
+        'meta_description',
+        'meta_keywords',
+    ];
+
+    public $translatedAttributes = [
+        'name',
+        'slug',
+        'meta_description',
+        'meta_keywords',
+        // 'description', // ako koristiš opis i u translation modelu
+    ];
+
+    /**
+     * Dohvata sve children kategorije (rekurzivno) zajedno sa prevodima.
+     */
+    public function children(): HasMany
+    {
+        return $this->hasMany(Category::class, 'parent_id')
+                    ->with('children', 'translations');
+    }
+
+    /**
+     * Dohvata parent kategoriju uz prevod.
+     */
+    public function parent(): BelongsTo
+    {
+        return $this->belongsTo(Category::class, 'parent_id')
+                    ->with('parent', 'translations');
+    }
+
+    /**
+     * Helper metoda za dohvat prevoda kategorije za dati jezik.
+     * Ako nije prosleđen jezik, koristi se trenutni app locale.
+     */
+    public function translateCat($locale = null, $withFallback = false)
+    {
+        $locale = $locale ?: app()->getLocale();
+        return $this->getTranslation($locale, $withFallback);
+    }
+
+    /**
+     * Rekurzivno vraća ID-eve trenutne kategorije i svih njenih potomaka.
+     * Korisno za filtriranje entiteta koji pripadaju podkategorijama.
+     */
+    public function allDescendantsAndSelfIds(): array
+    {
+        $ids = [$this->id];
+        foreach ($this->children as $child) {
+            $ids = array_merge($ids, $child->allDescendantsAndSelfIds());
+        }
+        return $ids;
+    }
+
+    /**
+     * Vraća true ako je ova kategorija child (ima parent_id).
+     */
+    public function isChild(): bool
+    {
+        return $this->parent_id !== null;
+    }
+
+    /**
+     * Staticka metoda koja vraća sve kategorije u tree strukturi.
+     * Root kategorije su one bez parent_id, a ostale se rekurzivno dodaju kao children.
+     */
+    public static function tree()
+    {
+        $allCategories = Category::with('translations')->get();
+        $rootCategories = $allCategories->whereNull('parent_id');
+        self::formatTree($rootCategories, $allCategories);
+        return $rootCategories;
+    }
+
+    /**
+     * Pomoćna metoda koja rekurzivno formatira sve children kategorije.
+     */
+    private static function formatTree($categories, $allCategories)
+    {
+        foreach ($categories as $category) {
+            $category->children = $allCategories->where('parent_id', $category->id)->values();
+
+            if ($category->children->isNotEmpty()) {
+                self::formatTree($category->children, $allCategories);
+            }
+        }
+    }
+}

@@ -1,0 +1,85 @@
+<?php
+
+namespace App\Livewire\Admin;
+
+use App\Models\Category;
+use Livewire\Component;
+use Illuminate\Support\Str;
+use Livewire\Attributes\Layout;
+use Livewire\Attributes\Validate;
+
+class AdminCategories extends Component
+{
+    public $modelId;
+    public $selectedCategory;
+
+    #[Validate('required')]
+    public $name;
+    #[Validate('nullable')]
+    public $meta_description;
+    #[Validate('nullable')]
+    public $meta_keywords;
+    public $cat_image;
+
+    public function saveCategory()
+    {
+        $this->validate();
+
+        $data = [
+            'name' => $this->name,
+            'slug' => Str::slug($this->name),
+            'cat_image' => $this->cat_image,
+            'meta_description' => $this->meta_description,
+            'meta_keywords' => $this->meta_keywords,
+        ];
+
+        if ($this->modelId) {
+            Category::findOrFail($this->modelId)->update($data);
+            session()->flash('message', 'Kategorija ažurirana');
+        } else {
+            Category::create($data);
+            session()->flash('message', 'Nova kategorija kreirana');
+        }
+
+        $this->resetForm();
+        $this->js("window.dispatchEvent(new CustomEvent('close-modal', { detail: 'create-category' }))");
+    }
+
+    public function resetForm()
+    {
+        $this->reset(['modelId', 'name', 'cat_image', 'meta_description', 'meta_keywords']);
+    }
+
+    public function loadModel($id)
+    {
+        $category = Category::findOrFail($id);
+
+        $this->modelId = $category->id;
+        $this->name = $category->name;
+        $this->cat_image = $category->cat_image;
+        $this->meta_description = $category->meta_description;
+        $this->meta_keywords = $category->meta_keywords;
+
+        $this->js("window.dispatchEvent(new CustomEvent('open-modal', { detail: 'create-category' }))");
+    }
+
+    public function confirmDelete($id)
+    {
+        $this->modelId = $id;
+        $this->js("window.dispatchEvent(new CustomEvent('open-modal', { detail: 'delete-category' }))");
+    }
+
+    public function deleteCategory()
+    {
+        Category::destroy($this->modelId);
+        $this->js("window.dispatchEvent(new CustomEvent('close-modal', { detail: 'delete-category' }))");
+        session()->flash('message', 'Uspješno ste obrisali kategoriju');
+    }
+
+    #[Layout('layouts.app')]
+    public function render()
+    {
+        $categories = Category::all();
+        return view('livewire.admin.admin-categories', compact('categories'));
+    }
+}

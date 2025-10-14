@@ -1,0 +1,97 @@
+<?php
+
+namespace App\Livewire\Admin;
+
+use App\Models\Category;
+use Livewire\Component;
+use Illuminate\Support\Str;
+use Livewire\Attributes\Layout;
+use Livewire\Attributes\Validate;
+
+class AdminCategories extends Component
+{
+    public $modelId;
+    public $selectedCategory;
+    public $activeTab;
+
+    #[Validate('required')]
+    public $name;
+    #[Validate('nullable')]
+    public $meta_description;
+    #[Validate('nullable')]
+    public $meta_keywords;
+    public $parent_id;
+    public $cat_image;
+
+    public function saveCategory()
+    {
+        $this->validate();
+
+        $data = [
+            'name' => $this->name,
+            'slug' => Str::slug($this->name),
+            'parent_id' => $this->parent_id,
+            'cat_image' => $this->cat_image,
+            'meta_description' => $this->meta_description,
+            'meta_keywords' => $this->meta_keywords,
+        ];
+
+        if ($this->modelId) {
+            Category::findOrFail($this->modelId)->update($data);
+            session()->flash('message', 'Kategorija ažurirana');
+        } else {
+            Category::create($data);
+            session()->flash('message', 'Nova kategorija kreirana');
+        }
+
+
+        /* ne koristim $this->reset(); jer bi onda morao imati public showModal koji traži reset,
+        pa zato ovako resetujem */
+        $this->resetForm();
+        $this->js("window.dispatchEvent(new CustomEvent('close-modal', { detail: 'create-category' }))");
+    }
+
+    /* Metod za slučaj kada se otvara create modal, nakon što se zatvorio update modal,
+    jer breeze ne restuje automatski ta polja */
+    public function resetForm()
+    {
+        $this->reset(['modelId', 'name', 'parent_id', 'cat_image', 'meta_description', 'meta_keywords']);
+    }
+
+    public function loadModel($id)
+    {
+        $category = Category::findOrFail($id);
+
+        $this->modelId = $category->id;
+        $this->parent_id = $category->parent_id;
+        $this->name = $category->name;
+        $this->cat_image = $category->cat_image;
+        $this->meta_description = $category->meta_description;
+        $this->meta_keywords = $category->meta_keywords;
+
+        // Otvori modal na frontendu
+        $this->js("window.dispatchEvent(new CustomEvent('open-modal', { detail: 'create-category' }))");
+    }
+
+
+    public function confirmDelete($id)
+    {
+        $this->modelId = $id;
+        // Otvaranje modala iz Livewire (frontend dio otvara modal)
+        $this->js("window.dispatchEvent(new CustomEvent('open-modal', { detail: 'delete-category' }))");
+    }
+
+    public function deleteCategory()
+    {
+        Category::destroy($this->modelId);
+        $this->js("window.dispatchEvent(new CustomEvent('close-modal', { detail: 'delete-category' }))");
+        session()->flash('message', 'Uspješno ste obrisali kategoriju');
+    }
+
+    #[Layout('layouts.app')]
+    public function render()
+    {
+        $categories = Category::tree();
+        return view('livewire.admin.admin-categories', compact('categories'));
+    }
+}
