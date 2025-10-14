@@ -8,7 +8,7 @@
         <div class="z-20 flex flex-col items-center w-full mx-auto max-w-7xl pt-28 md:pt-32">
 
             <div class="pt-24 rounded-2xl">
-                <img src="{{ asset('images/svg/logo-tradicija-full-white.svg') }}" class="h-48 mx-auto lg:h-72"
+                <img src="{{ asset('images/svg/logo-white-tradicija-full.svg') }}" class="h-48 mx-auto lg:h-72"
                     alt="Restoran Tradicija Banja Luka" />
 
                 <h1 class="text-3xl font-black leading-tight md:text-4xl lg:text-5xl">

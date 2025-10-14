@@ -7,7 +7,7 @@
         <div class="flex flex-col items-center order-1 w-full px-3 py-4 md:order-2 md:w-1/3 md:text-xs">
 
             {{-- <x-application-logo class="block w-auto h-40" /> --}}
-            <img src="{{ asset('images/svg/logo-tradicija-full-white.svg') }}" class="mx-auto h-28"
+            <img src="{{ asset('images/svg/logo-white-tradicija-full.svg') }}" class="mx-auto h-28"
                     alt="Restoran Tradicija Banja Luka" />
 
             <p class="w-full py-3 text-center md:w-5/6">
