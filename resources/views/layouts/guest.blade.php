@@ -18,9 +18,6 @@
     <link rel="canonical" href="{{ url()->current() }}" />
 
     <meta property="og:title" content="@yield('meta_title', $pageMetaTitle)" />
-    <meta property="og:description" content="@yield('meta_description', 'Meta opis za ovu stranicu')" />
-
-    <meta property="og:title" content="@yield('meta_title', $pageMetaTitle)" />
     <meta property="og:description" content="@yield('meta_description', $pageDescription)" />
 
     <meta property="og:url" content="{{ url()->current() }}" />
