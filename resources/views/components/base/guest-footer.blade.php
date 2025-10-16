@@ -1,4 +1,4 @@
-<footer class="relative flex flex-col items-center w-full py-3 text-white bg-primary">
+<footer class="relative flex flex-col items-center w-full pt-3 text-white bg-primary">
 
     {{-- <x-application-logo class="block w-auto h-36" /> --}}
 
@@ -96,7 +96,6 @@
             </a> --}}
         </div>
 
-
         <div class="flex flex-col items-center order-3 w-full p-4 px-1 mx-auto mt-8 space-y-1 text-base md:mt-0 md:w-1/3 sm:px-5 md:text-sm">
 
                 <div class="flex justify-center w-full text-sm space-x-7 md:space-x-4">
@@ -154,14 +153,14 @@
 
     {{-- Back to top icon --}}
     <a href="#" aria-label="Back to top">
-        <svg class="absolute z-10 p-2 text-white bg-black rounded-full size-12 right-4 bottom-3 animate-bounce"
+        <svg class="absolute z-10 p-2 text-white bg-black rounded-full size-12 right-3 md:right-4 bottom-12 animate-bounce"
             fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
         </svg>
     </a>
 
     {{-- Copyright and product by polja --}}
-    <div class="container flex flex-col items-center justify-center px-2 mx-auto -mt-2 text-xs text-white md:px-5">
+    <div class="container flex flex-col items-center justify-center px-2 mx-auto -mt-1 text-xs text-white md:px-5">
         <div class="flex pb-2 mx-auto text-sm">
             <a href="#" wire:navigate class="px-1 md:px-2 hover:text-black">@lang('pages.home')</a>|
             <a href="#" wire:navigate class="px-1 md:px-2 hover:text-black">@lang('pages.rooms')</a>|
@@ -170,7 +169,7 @@
             <a href="#" wire:navigate class="px-1 md:px-2 hover:text-black">@lang('pages.about')</a>|
             <a href="#" wire:navigate class="px-1 md:px-2 hover:text-black">@lang('pages.contact')</a>
         </div>
-        <p class="inline-flex text-center">Copyright <span class="">©</span>
+        <p class="inline-flex pb-2 -mt-2 text-center">Copyright <span class="">©</span>
             <?php echo date('Y'); ?> | <span class="px-1 font-bold">Restoran Tradicija</span> Banja Luka
         </p>
         {{-- <p class="inline-flex items-center justify-center">
@@ -180,8 +179,9 @@
             </a>
             </span>
         </p> --}}
-        <div class="flex py-2 space-x-2">
+
+    </div>
+    <div class="flex justify-center w-full py-2 bg-black">
             <x-base.lang-switcher />
         </div>
-    </div>
 </footer>
