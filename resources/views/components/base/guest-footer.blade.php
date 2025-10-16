@@ -14,19 +14,19 @@
                 @lang('messages.footer-small-text')
             </p>
 
-            <div class="flex pt-3 space-x-4">
+            <div class="flex pt-0 space-x-4">
                 <a href="https://www.facebook.com/profile.php?id=61578833284399" target="_blank" aria-label="Facebook Restoran Tradicija">
-                    <svg class="text-white size-8 hover:text-black" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 176 176" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><g data-name="Layer 2">
+                    <svg class="text-white size-10 md:size-8 hover:text-black" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 176 176" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><g data-name="Layer 2">
                         <path d="M173 31.48A32.07 32.07 0 0 0 144.52 3a532.59 532.59 0 0 0-113 0A32.07 32.07 0 0 0 3 31.48a532.59 532.59 0 0 0 0 113A32.06 32.06 0 0 0 31.48 173a532.59 532.59 0 0 0 113 0A32.06 32.06 0 0 0 173 144.52a532.59 532.59 0 0 0 0-113.04zm-57.12 46.11-1.77 15.32a2.86 2.86 0 0 1-2.82 2.57h-16l-.08 45.45a2.05 2.05 0 0 1-2 2.07H77a2 2 0 0 1-2-2.08V95.48H63a2.87 2.87 0 0 1-2.84-2.9l-.06-15.33a2.88 2.88 0 0 1 2.84-2.92H75v-14.8C75 42.35 85.2 33 100.16 33h12.26a2.88 2.88 0 0 1 2.85 2.92v12.91a2.88 2.88 0 0 1-2.85 2.92h-7.52c-8.13 0-9.71 4-9.71 9.77v12.81h17.87a2.89 2.89 0 0 1 2.82 3.26z" data-name="01.facebook" fill="currentColor" opacity="1" data-original="#000000" class=""></path></g></g>
                     </svg>
                 </a>
                 <a href="https://www.instagram.com/tradicijabl/" target="_blank" aria-label="Instagram Restoran Tradicija">
-                    <svg class="text-white size-8 hover:text-black" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><g>
+                    <svg class="text-white size-10 md:size-8 hover:text-black" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><g>
                         <path d="M301 256c0 24.852-20.148 45-45 45s-45-20.148-45-45 20.148-45 45-45 45 20.148 45 45zm0 0" fill="currentColor" opacity="1" data-original="#000000" class=""></path><path d="M332 120H180c-33.086 0-60 26.914-60 60v152c0 33.086 26.914 60 60 60h152c33.086 0 60-26.914 60-60V180c0-33.086-26.914-60-60-60zm-76 211c-41.355 0-75-33.645-75-75s33.645-75 75-75 75 33.645 75 75-33.645 75-75 75zm86-146c-8.285 0-15-6.715-15-15s6.715-15 15-15 15 6.715 15 15-6.715 15-15 15zm0 0" fill="currentColor" opacity="1" data-original="#000000" class=""></path><path d="M377 0H135C60.562 0 0 60.563 0 135v242c0 74.438 60.563 135 135 135h242c74.438 0 135-60.563 135-135V135C512 60.562 451.437 0 377 0zm45 332c0 49.625-40.375 90-90 90H180c-49.625 0-90-40.375-90-90V180c0-49.625 40.375-90 90-90h152c49.625 0 90 40.375 90 90zm0 0" fill="currentColor" opacity="1" data-original="#000000" class=""></path></g>
                     </svg>
                 </a>
                 <a href="https://www.tiktok.com/@tradicijabl?_t=ZM-908TuicYU1o&_r=1" target="_blank" aria-label="TikTok Restoran Tradicija">
-                    <svg class="text-white size-8 hover:text-black" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 176 176" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><g data-name="Layer 2">
+                    <svg class="text-white size-10 md:size-8 hover:text-black" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 176 176" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><g data-name="Layer 2">
                         <path d="M173 31.47A32 32 0 0 0 144.52 3a530 530 0 0 0-113 0A32 32 0 0 0 3 31.47a532.69 532.69 0 0 0 0 113.05A32 32 0 0 0 31.48 173a530 530 0 0 0 113 0A32 32 0 0 0 173 144.52a532.69 532.69 0 0 0 0-113.05zm-36.62 45.2h-8.58a34.72 34.72 0 0 1-18-5v36.23a35.1 35.1 0 1 1-35.1-35.09h8.6v17.11h-8.57a18 18 0 1 0 18 18V33h17.13v8.58a18 18 0 0 0 18 18h8.57z" data-name="14.tiktok" fill="currentColor" opacity="1" data-original="#000000" class=""></path></g></g>
                     </svg>
                 </a>
@@ -38,7 +38,7 @@
             </a> --}}
         </div>
 
-        <div class="flex flex-col order-1 w-full px-3 py-4 md:order-1 md:w-1/3 md:text-xs lg:space-y-1">
+        <div class="flex flex-col order-1 w-4/5 px-3 py-4 mx-auto md:order-1 md:w-1/3 md:text-xs lg:space-y-1">
 
             <div class="hidden pl-5 md:flex">
             <img src="{{ asset('images/svg/logo-tradicija-white.svg') }}" class="h-9" alt="Restoran Tradicija Banja Luka">
@@ -140,11 +140,11 @@
 
 
     {{-- Tekst u footeru --}}
-    <div class="flex flex-col items-center mx-4 mt-8 text-center md:mt-0 max-w-7xl md:mx-auto md:w-5/6">
+    {{-- <div class="flex flex-col items-center mx-4 mt-8 text-center md:mt-0 max-w-7xl md:mx-auto md:w-5/6">
         <p class="py-3 text-xs text-justify sm:text-center">
             @lang('messages.footer_rights_message')
         </p>
-    </div>
+    </div> --}}
 
     <div class="flex items-center w-full px-4 py-3 mx-auto -mt-1 space-x-4 max-w-7xl">
         <div class="w-full border-t"></div>
@@ -154,7 +154,7 @@
 
     {{-- Back to top icon --}}
     <a href="#" aria-label="Back to top">
-        <svg class="absolute z-10 w-10 h-10 p-2 text-white bg-black rounded-full right-4 bottom-3 animate-bounce"
+        <svg class="absolute z-10 p-2 text-white bg-black rounded-full size-12 right-4 bottom-3 animate-bounce"
             fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
         </svg>
