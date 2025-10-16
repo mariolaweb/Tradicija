@@ -157,7 +157,7 @@
 
     {{-- Back to top icon --}}
     <a href="#" aria-label="Back to top">
-        <svg class="absolute bottom-0 z-10 p-2 text-white rounded-full bg-primary size-10 md:size-12 right-3 md:right-4 animate-bounce"
+        <svg class="absolute z-10 p-2 text-white bg-black rounded-full bottom-24 size-12 right-3 md:right-4 xl:right-5 xl:bottom-14 animate-bounce"
             fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
         </svg>
@@ -186,7 +186,7 @@
 
 
     </div>
-    <div class="flex flex-col items-center justify-center w-full py-2 text-xs bg-black">
+    <div class="flex flex-col items-center justify-center w-full pt-2 pb-2.5 text-xs bg-black">
         <p class="inline-flex pb-0 text-center">Copyright <span class="">©</span>
             <?php echo date('Y'); ?> | <span class="px-1 font-bold">Restoran Tradicija</span> Banja Luka
         </p>
