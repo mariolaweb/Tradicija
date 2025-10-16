@@ -16,7 +16,7 @@
                 </h1>
             </div>
 
-            <div class="w-5/6 max-w-3xl px-4 mx-auto lg:mt-10">
+            <div class="w-5/6 max-w-3xl px-4 mx-auto mt-2 lg:mt-10">
                 <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-5">
 
                     {{-- Restoran --}}
