@@ -16,14 +16,14 @@
                 </h1>
             </div>
 
-            <div class="w-full max-w-3xl px-4 mx-auto mt-10">
+            <div class="w-5/6 max-w-3xl px-4 mx-auto lg:mt-10">
                 <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-5">
 
                     {{-- Restoran --}}
                     <a href="#"
                         class="group relative rounded-xl bg-primary/70 py-3 text-white transition duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70">
                         <div class="flex flex-col items-center justify-center">
-                            <svg class="size-12" xmlns="http://www.w3.org/2000/svg" version="1.1"
+                            <svg class="size-10 lg:size-12" xmlns="http://www.w3.org/2000/svg" version="1.1"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0"
                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve">
                                 <g transform="matrix(0.92,0,0,0.92,20.48783966064451,20.4862399291992)">
@@ -42,7 +42,7 @@
                                 </g>
                             </svg>
                             <div class="min-w-0">
-                                <h3 class="text-xl font-medium tracking-wider text-center">@lang('messages.restaurant')</h3>
+                                <h3 class="font-medium tracking-wider text-center md:text-lg lg:text-xl">@lang('messages.restaurant')</h3>
                             </div>
 
                         </div>
@@ -52,7 +52,7 @@
                     <a href="#"
                         class="group relative rounded-xl bg-secondary/70 py-3 text-white transition duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-secondary">
                         <div class="flex flex-col items-center">
-                            <svg class="size-12" xmlns="http://www.w3.org/2000/svg" version="1.1"
+                            <svg class="size-10 lg:size-12" xmlns="http://www.w3.org/2000/svg" version="1.1"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0"
                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve">
                                 <g
@@ -64,7 +64,7 @@
                                 </g>
                             </svg>
                             <div class="min-w-0">
-                                <h3 class="text-xl font-medium tracking-wider text-center">@lang('messages.accommodation')</h3>
+                                <h3 class="font-medium tracking-wider text-center md:text-lg lg:text-xl">@lang('messages.accommodation')</h3>
                             </div>
 
                         </div>
@@ -139,7 +139,7 @@
     </header>
 
 
-    <section class="w-full px-2 pb-8 text-white bg-black">
+    <section class="w-full px-2 pb-8 text-white md:pb-4 bg-primary">
         <blockquote class="relative max-w-3xl p-4 mx-auto text-xl leading-relaxed text-center md:mt-8">
             <!-- veliki navodnik -->
             <span class="absolute font-serif text-6xl italic pointer-events-none select-none -top-2 left-5">“</span>
@@ -148,7 +148,7 @@
                 @lang('messages.wisdom')
             </p>
 
-            <footer class="pl-40 mt-3 text-base italic text-secondary">* @lang('messages.wisdom-paraf')</footer>
+            <footer class="pl-40 mt-3 text-base italic">* @lang('messages.wisdom-paraf')</footer>
         </blockquote>
     </section>
 
