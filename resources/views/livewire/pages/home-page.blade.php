@@ -237,9 +237,9 @@
         </div>
     </section> --}}
 
-    <div class="flex items-center justify-center w-full py-10 bg-primary">
-      <p class="text-3xl font-medium tracking-wider text-center text-white lg:text-4xl">
-        @lang('messages.opening')
+    <div class="flex items-center justify-center w-full bg-black py-7">
+      <p class="text-3xl font-light tracking-wider text-center text-white">
+         TRADICIJA @lang('messages.restaurant')
       </p>
     </div>
 
