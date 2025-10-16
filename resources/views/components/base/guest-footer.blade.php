@@ -4,13 +4,13 @@
 
     <div class="flex flex-col w-full mx-auto md:flex-row md:justify-between max-w-7xl">
 
-        <div class="flex flex-col items-center order-1 w-full px-3 py-4 md:order-2 md:w-1/3 md:text-xs">
+        <div class="flex flex-col items-center order-1 w-full px-3 py-4 md:order-2 md:w-1/3 md:text-sm">
 
             {{-- <x-application-logo class="block w-auto h-40" /> --}}
             <img src="{{ asset('images/svg/logo-white-tradicija-full.svg') }}" class="mx-auto h-28"
                     alt="Restoran Tradicija Banja Luka" />
 
-            <p class="w-full py-3 text-center md:w-5/6">
+            <p class="w-full py-4 text-center md:w-5/6">
                 @lang('messages.footer-small-text')
             </p>
 
@@ -41,10 +41,10 @@
         <div class="flex flex-col order-1 w-full px-3 py-4 md:order-1 md:w-1/3 md:text-xs lg:space-y-1">
 
             <div class="hidden pl-5 md:flex">
-            <img src="{{ asset('images/svg/logo-tradicija-white.svg') }}" class="h-10" alt="Restoran Tradicija Banja Luka">
+            <img src="{{ asset('images/svg/logo-tradicija-white.svg') }}" class="h-9" alt="Restoran Tradicija Banja Luka">
             </div>
             <div class="flex space-x-1.5 pt-4">
-                <a href="#" class="flex items-center space-x-1 cursor-pointer group">
+                <a href="https://maps.app.goo.gl/BBjhYX59Q9sqWPKXA" target="_blank" class="flex items-center space-x-1 cursor-pointer group">
                 <svg class="mr-0.5 size-7 text-white group-hover:text-black" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g transform="matrix(1.05,0,0,1.05,-1.6000000000000014,-1.5999883651733313)"><path d="M32 2A24.027 24.027 0 0 0 8 26c0 18.294 22.45 35.098 23.406 35.804a1 1 0 0 0 1.188 0C33.55 61.098 56 44.294 56 26A24.027 24.027 0 0 0 32 2zm0 42a18 18 0 1 1 18-18 18.02 18.02 0 0 1-18 18zm11-23a6.142 6.142 0 0 1-3 5.495V35a2 2 0 0 1-4 0v-8.505A6.142 6.142 0 0 1 33 21c0-3.309 2.243-6 5-6s5 2.691 5 6zm-12-5v8a3.003 3.003 0 0 1-3 3v8a2 2 0 0 1-4 0v-8a3.003 3.003 0 0 1-3-3v-8a1 1 0 0 1 2 0v5h2v-5a1 1 0 0 1 2 0v5h2v-5a1 1 0 0 1 2 0z" data-name="01-Restaurant" fill="currentColor" opacity="1" data-original="#000000" class=""></path></g>
                 </svg>
                 <p><span class="font-semibold uppercase">@lang('messages.address'):</span> Veljka Mlađenovića bb</p>
