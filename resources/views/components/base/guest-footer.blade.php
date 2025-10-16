@@ -130,6 +130,10 @@
                     @lang('messages.footer_call_message')
                 </p>
 
+                <div class="flex flex-col items-center pt-4">
+                    <x-base.lang-switcher />
+                </div>
+
         </div>
 
     </div>
@@ -153,7 +157,7 @@
 
     {{-- Back to top icon --}}
     <a href="#" aria-label="Back to top">
-        <svg class="absolute z-10 p-2 text-white bg-black rounded-full size-12 right-3 md:right-4 bottom-12 animate-bounce"
+        <svg class="absolute bottom-0 z-10 p-2 text-white rounded-full bg-primary size-10 md:size-12 right-3 md:right-4 animate-bounce"
             fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
         </svg>
@@ -169,9 +173,9 @@
             <a href="#" wire:navigate class="px-1 md:px-2 hover:text-black">@lang('pages.about')</a>|
             <a href="#" wire:navigate class="px-1 md:px-2 hover:text-black">@lang('pages.contact')</a>
         </div>
-        <p class="inline-flex pb-2 -mt-2 text-center">Copyright <span class="">©</span>
+        {{-- <p class="inline-flex pb-2 -mt-2 text-center">Copyright <span class="">©</span>
             <?php echo date('Y'); ?> | <span class="px-1 font-bold">Restoran Tradicija</span> Banja Luka
-        </p>
+        </p> --}}
         {{-- <p class="inline-flex items-center justify-center">
             <span class="mr-1 text-red-600">&hearts;</span>Product by
             <a href=" https://mariolaweb.com" target="_blank">
@@ -180,8 +184,19 @@
             </span>
         </p> --}}
 
+
     </div>
-    <div class="flex justify-center w-full py-2 bg-black">
-            <x-base.lang-switcher />
+    <div class="flex flex-col items-center justify-center w-full py-2 text-xs bg-black">
+        <p class="inline-flex pb-0 text-center">Copyright <span class="">©</span>
+            <?php echo date('Y'); ?> | <span class="px-1 font-bold">Restoran Tradicija</span> Banja Luka
+        </p>
+         <p class="inline-flex items-center justify-center">
+            <span class="mr-1 text-red-600">&hearts;</span>Product by
+            <a href=" https://mariolaweb.com" target="_blank">
+                <span class="ml-1 text-gray-300 hover:text-white">@mariolaWeb</span>
+            </a>
+            </span>
+        </p>
+            {{-- <x-base.lang-switcher /> --}}
         </div>
 </footer>
