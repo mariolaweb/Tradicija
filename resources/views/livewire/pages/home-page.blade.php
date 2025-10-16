@@ -142,7 +142,7 @@
     <section class="w-full px-2 pb-8 text-white md:pb-4 bg-primary">
         <blockquote class="relative max-w-3xl p-4 mx-auto text-xl leading-relaxed text-center md:mt-8">
             <!-- veliki navodnik -->
-            <span class="absolute font-serif text-6xl italic pointer-events-none select-none -top-2 left-5">“</span>
+            <span class="absolute font-serif text-6xl italic pointer-events-none select-none -top-1 left-5">“</span>
 
             <p class="max-w-2xl mx-auto italic">
                 @lang('messages.wisdom')
@@ -238,7 +238,7 @@
     </section> --}}
 
     <div class="flex items-center justify-center w-full py-5 bg-black">
-      <p class="text-3xl font-light tracking-wider text-center text-white">
+      <p class="text-2xl font-light tracking-wider text-center text-white">
          TRADICIJA @lang('messages.restaurant')
       </p>
     </div>
