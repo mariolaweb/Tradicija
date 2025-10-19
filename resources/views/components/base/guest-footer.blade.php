@@ -51,7 +51,7 @@
             </a>
             </div>
 
-            <a href="{{ route('contact-us') }}">
+            <a href="#">
                 <div class="flex items-center space-x-1.5 pt-1 group">
                 <svg class="mr-0.5 size-7 text-white group-hover:text-black" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><g transform="matrix(0.9199999999999996,0,0,0.9199999999999996,20.480000000000103,20.480000000000103)">
                     <path d="M507.49 101.721 352.211 256 507.49 410.279c2.807-5.867 4.51-12.353 4.51-19.279V121c0-6.927-1.703-13.412-4.51-19.279zM467 76H45c-6.927 0-13.412 1.703-19.279 4.51l198.463 197.463c17.548 17.548 46.084 17.548 63.632 0L486.279 80.51C480.412 77.703 473.927 76 467 76zM4.51 101.721C1.703 107.588 0 114.073 0 121v270c0 6.927 1.703 13.413 4.51 19.279L159.789 256 4.51 101.721z" fill="currentColor" opacity="1" data-original="#000000" class=""></path><path d="m331 277.211-21.973 21.973c-29.239 29.239-76.816 29.239-106.055 0L181 277.211 25.721 431.49C31.588 434.297 38.073 436 45 436h422c6.927 0 13.412-1.703 19.279-4.51L331 277.211z" fill="currentColor" opacity="1" data-original="#000000" class=""></path></g>
@@ -157,7 +157,7 @@
 
     {{-- Back to top icon --}}
     <a href="#" aria-label="Back to top">
-        <svg class="absolute z-10 p-2 text-white bg-black rounded-full bottom-24 size-12 right-3 md:right-4 xl:right-5 xl:bottom-14 animate-bounce"
+        <svg class="absolute z-10 p-2 text-white rounded-full bg-secondary bottom-24 size-12 right-3 md:right-4 xl:right-5 xl:bottom-14 animate-bounce"
             fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
         </svg>
@@ -186,14 +186,14 @@
 
 
     </div>
-    <div class="flex flex-col items-center justify-center w-full pt-2 pb-2.5 text-xs bg-black">
+    <div class="flex flex-col items-center justify-center w-full pt-2 pb-2.5 text-xs bg-secondary">
         <p class="inline-flex pb-0 text-center">Copyright <span class="">©</span>
             <?php echo date('Y'); ?> | <span class="px-1 font-bold">Restoran Tradicija</span> Banja Luka
         </p>
          <p class="inline-flex items-center justify-center">
             <span class="mr-1 text-red-600">&hearts;</span>Product by
             <a href=" https://mariolaweb.com" target="_blank">
-                <span class="ml-1 text-gray-300 hover:text-white">@mariolaWeb</span>
+                <span class="ml-1 text-white hover:text-primary">@mariolaWeb</span>
             </a>
             </span>
         </p>

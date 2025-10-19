@@ -21,7 +21,7 @@ return [
 
 
     // Privacy
-    'privacy-meta-title' => 'Politika Privatnosti',
+    'privacy-meta-title' => 'Restoran Tradicija | Politika Privatnosti',
     'privacy-meta-desc' => 'Politika privatnosti na web stranici ',
     'privacy-meta-keywords' => 'izjava o zaštiti privatnosti, privatnost korisnika, lični podaci, svrha prikupljanja i obrade podataka korisnika',
     'privacy-title-1' => 'Izjava o zaštiti privatnosti korisnika',
@@ -38,7 +38,7 @@ return [
 
 
     // Cookies
-    'cookies-meta-title' => 'Politika Kolačića',
+    'cookies-meta-title' => 'Restoran Tradicija | Politika Kolačića',
     'cookies-meta-desc' => 'Politika korištenja kolačića (eng. cookies) na web stranici ',
     'cookies-meta-keywords' => 'kolačići na web stranici, cookies, vrste kolačića, blokiranje kolačića',
     'cookies-title-1' => 'Šta su to kolačići (eng. cookies) i kako se prikupljaju?',
@@ -57,14 +57,25 @@ return [
     'cookies-title-7' => 'Izmjena i ažuriranje politike kolačića ',
     'cookies-paragraf-8' => 'Svaku izmjenu, prepravku ili ažuriranje naše politike kolačića, objavićemo na našoj web stranici :app_name. Zbog toga Vas molimo da povremeno posjetite ovu web stranicu radi informisanja o eventualnim mogućim izmjenama naše politike kolačića, shodno uputama i regulacijama Evropske unije.',
 
-    // Privacy
+    // About
     'about-meta-title' => 'O Nama - Restoran Tradicija Banja Luka',
     'about-meta-desc' => 'Saznajte više informacija o nama - Restoran Tradicija Banja Luka ',
-    'about-meta-keywords' => "meta keywords"
+    'about-meta-keywords' => "restoran tradicija, banja luka, banjaluka, tradicionalna hrana, narodna jela, gastro specijaliteti, domaća kuhinja",
 
+    //FAQ - Pitanja
+    'faq-meta-title' => 'Restoran Tradicija | Najčešće postavljana pitanja',
+    'faq-meta-desc' => 'Saznajte šta naše posjetitelje i drage goste najviše zanima - Restoran Tradicija Banja Luka ',
+    'faq-meta-keywords' => 'pitanja, česta pitanja, do kada radite, mogu li rezervisati online, parking, imate li smještaj, kako rezervisati sobu',
 
+    //Galerija
+    'gallery-meta-title' => 'Restoran Tradicija | Galerija fotografija',
+    'gallery-meta-desc' => 'Pogledajte neke od fotografija našeg restorana i soba za smještaj - Restoran Tradicija Banja Luka ',
+    'gallery-meta-keywords' => 'galerija fotografija, slike restorana, entrijer, sobe za smještaj, slike soba, fotografije tradicionalnih jela',
 
-
+    //Kontakt
+    'contact-meta-title' => 'Restoran Tradicija | Kontaktirajte nas',
+    'contact-meta-desc' => 'Kontakt forma za slanje poruka na web stranici Restoran Tradicija Banja Luka',
+    'contact-meta-keywords' => 'kontakt, kontaktirajte nas, poruke, pošaljite poruku, postavite pitanje, sve što vas zanima',
 
 
 ];

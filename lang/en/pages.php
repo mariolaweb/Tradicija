@@ -20,7 +20,7 @@ return [
     'contact' => 'Contact',
 
     // Privacy
-    'privacy-meta-title' => 'Privacy Policy',
+    'privacy-meta-title' => 'Restaurant Tradicija | Privacy Policy',
     'privacy-meta-desc' => 'Privacy policy of the website ',
     'privacy-meta-keywords' => 'privacy statement, user privacy, personal data, data collection and processing purpose',
     'privacy-title-1' => 'User Privacy Protection Statement',
@@ -37,7 +37,7 @@ return [
 
 
     // Cookies
-    'cookies-meta-title' => 'Cookie Policy',
+    'cookies-meta-title' => 'Restaurant Tradicija | Cookie Policy',
     'cookies-meta-desc' => 'Cookie usage policy on the website',
     'cookies-meta-keywords' => 'website cookies, cookies, types of cookies, blocking cookies',
     'cookies-title-1' => 'What Are Cookies and How Are They Collected?',
