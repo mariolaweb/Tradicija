@@ -166,11 +166,11 @@
 
     {{-- Copyright and product by polja --}}
     <div class="container flex flex-col items-center justify-center px-2 mx-auto -mt-1 text-xs text-white md:px-5">
-        <div class="flex pb-2 mx-auto text-sm">
+        <div class="flex pb-2 mx-auto text-xs sm:text-sm">
             <a href="{{ route('home') }}" wire:navigate class="px-1 md:px-2 hover:text-secondary">@lang('pages.home')</a>|
             <a href="{{ route('cuisine') }}" wire:navigate class="px-1 md:px-2 hover:text-secondary">@lang('pages.cuisine')</a>|
             <a href="{{ route('rooms') }}" wire:navigate class="px-1 md:px-2 hover:text-secondary">@lang('pages.rooms')</a>|
-            <a href="{{ route('faq') }}" wire:navigate class="px-1 md:px-2 hover:text-secondary">FAQ</a>|
+            <a href="{{ route('faq') }}" wire:navigate class="px-1 md:px-2 hover:text-secondary">@lang('pages.faq')</a>|
             <a href="{{ route('gallery') }}" wire:navigate class="px-1 md:px-2 hover:text-secondary">@lang('pages.gallery')</a>|
             <a href="{{ route('about') }}" wire:navigate class="px-1 md:px-2 hover:text-secondary">@lang('pages.about')</a>|
             <a href="{{ route('contact-us') }}" wire:navigate class="px-1 md:px-2 hover:text-secondary">@lang('pages.contact')</a>
