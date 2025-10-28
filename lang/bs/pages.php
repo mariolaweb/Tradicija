@@ -12,18 +12,21 @@ return [
     'gallery' => 'Galerija',
     'rooms' => 'Sobe',
     'faq' => 'Pitanja',
+    'faq-title' => 'Najčešća Pitanja',
     'about' => 'O nama',
+    'about-title' => 'Ukratko o Nama',
     'gallery' => 'Galerija',
+    'gallery-title' => 'Galerija Fotografija',
     'tos' => 'Pravila i uslovi',
     'privacy' => 'Privatnost korisnika',
     'cookies' => 'Politika kolačića',
     'contact' => 'Kontakt',
-
+    'contact-title' => 'Kontaktirajte Nas',
 
     // Privacy
-    'privacy-meta-title' => 'Restoran Tradicija | Politika Privatnosti',
-    'privacy-meta-desc' => 'Politika privatnosti na web stranici ',
-    'privacy-meta-keywords' => 'izjava o zaštiti privatnosti, privatnost korisnika, lični podaci, svrha prikupljanja i obrade podataka korisnika',
+    'privacy-meta-title' => 'Restoran Tradicija Banja Luka | Politika privatnosti podataka',
+    'privacy-meta-desc' => 'Saznajte kako Restoran Tradicija Banja Luka prikuplja, koristi i štiti vaše lične podatke u skladu s propisima o zaštiti privatnosti i bezbjednosti.',
+    'privacy-meta-keywords' => 'restoran tradicija banja luka, politika privatnosti, zaštita podataka, lični podaci, sigurnost korisnika, privatnost korisnika, obrada podataka, zaštita privatnosti, web stranica',
     'privacy-title-1' => 'Izjava o zaštiti privatnosti korisnika',
     'privacy-paragraf-1' => 'Banja Luka web stranica se obavezuje da će čuvati privatnost svih naših kupaca. Vaše lične podatke prikupljamo samo kada nam ih Vi sami stavite na raspolaganje npr. u okviru registracije na stranicu, putem ispunjavanja obrazaca ili slanjem elektronske pošte, u okviru narudžbe proizvoda ili usluga, slanja upita ili sličnih zahtjeva vezanih za usluge na našoj web stranici, te u sličnim situacijama u kojim ste odabrali pružiti nam podatke. Baza podataka i njen sadržaj ostaju u našoj kompaniji te pri izvršiteljima obrade i serverima koji djeluju u naše ime, te su nam odgovorni. Prikupljamo samo nužne, osnovne podatke o kupcima/ korisnicima. Ti podaci nam služe kako bi vam uspješno dostavili artikle koje ste naručili, potvrdili rezervacije koje ste označili ili odgovorili na upite.',
     'privacy-paragraf-2' => 'Dajemo našim klijentima potpunu mogućnost izbora o upotrebi njihovih ličnih podataka, uključujući mogućnost odluke žele li ili ne žele da se njihovo ime ukloni s lista koje se koriste u marketinške svrhe. Web stranica :app_name ne prodaje, ne iznajmljuje i ne posuđuje popis korisnika svojih stranica trećim stranama. Uz obavezu zadržavanja povjerljivosti, možemo dijeliti podatke s pouzdanim partnerima za određene svrhe: izradu statističke analize, omogućavanje korisničke podrške, organizaciju dostave, potvrde rezervacija ili slične potrebe.',
@@ -38,9 +41,9 @@ return [
 
 
     // Cookies
-    'cookies-meta-title' => 'Restoran Tradicija | Politika Kolačića',
-    'cookies-meta-desc' => 'Politika korištenja kolačića (eng. cookies) na web stranici ',
-    'cookies-meta-keywords' => 'kolačići na web stranici, cookies, vrste kolačića, blokiranje kolačića',
+    'cookies-meta-title' => 'Restoran Tradicija Banja Luka | Politika kolačića (Cookies)',
+    'cookies-meta-desc' => 'Saznajte kako Restoran Tradicija Banja Luka koristi kolačiće (cookies) za unapređenje korisničkog iskustva i zaštitu vaše privatnosti na web stranici.',
+    'cookies-meta-keywords' => 'restoran tradicija banja luka, politika kolačića, cookies, upotreba kolačića, privatnost, sigurnost podataka, vrste kolačića, podešavanja kolačića, web stranica',
     'cookies-title-1' => 'Šta su to kolačići (eng. cookies) i kako se prikupljaju?',
     'cookies-paragraf-1' => 'Kolačići, čak i u našem narodu poznatiji po engleskom imenu "cookies" i druge tehnologije za smještanje i čuvanje podataka omogućavaju nam da na Vaš uređaj pohranimo male količine podataka "kolačiće" o vašoj posjeti našoj web stranici, kako bismo vam omogućili jednostavniju interakciju i olakšali korištenje naše web stranice. Kad naredni put posjetite našu web stranicu uz pomoć istog uređaja, kolačić i informacije pohranjene u njemu šalju se web stranici koja ih je generisala i stranica će prepoznati da ste je prethodno posjetili, i u nekim slučajevima, prilagodit će sadržaj uzimajući u obzir vašu prethodnu posjetu. Na ovaj način se sadržaj web stranica može prilagoditi vašim ličnim interesima i preferencijama.',
     'cookies-paragraf-2' => 'Kolačići su inače, datoteke sa malim količinama informacija koje se preuzimaju sa bilo kojeg uređaja, sa omogućenim internet pristupom, kao što je Vaš računar, pametni telefon ili tablet, kada posjetite web stranicu. Kolačići obavljaju mnogo različitih i korisnih poslova, kao što su pamćenje Vaših podešavanja, generalno poboljšavajući Vaše "online" iskustvo i pomažući nam da Vam ponudimo najbolje proizvode i usluge. Koriste se za pamćenje Vas i vaših želja, bilo za jedan posjet (putem "sesijskih kolačića") ili za više ponovljenih posjeta (pomoću "trajnih kolačića").',
@@ -58,24 +61,56 @@ return [
     'cookies-paragraf-8' => 'Svaku izmjenu, prepravku ili ažuriranje naše politike kolačića, objavićemo na našoj web stranici :app_name. Zbog toga Vas molimo da povremeno posjetite ovu web stranicu radi informisanja o eventualnim mogućim izmjenama naše politike kolačića, shodno uputama i regulacijama Evropske unije.',
 
     // About
-    'about-meta-title' => 'O Nama - Restoran Tradicija Banja Luka',
-    'about-meta-desc' => 'Saznajte više informacija o nama - Restoran Tradicija Banja Luka ',
-    'about-meta-keywords' => "restoran tradicija, banja luka, banjaluka, tradicionalna hrana, narodna jela, gastro specijaliteti, domaća kuhinja",
+    'about-meta-title' => 'Restoran Tradicija Banja Luka | O nama i naša priča o ukusu',
+    'about-meta-desc' => 'Upoznajte Restoran Tradicija Banja Luka - spoj domaće kuhinje, modernog ambijenta i autentičnog ugostiteljstva. Saznajte više o našoj priči.',
+    'about-meta-keywords' => "restoran tradicija banja luka, domaća kuhinja, tradicionalna jela, restoran u banjaluci, gastronomski specijaliteti, restoran sa smještajem, autentična hrana, lokalni specijaliteti, moderni restoran, restoran sa parkingom",
+    'about-text-restoran' => 'Restoran Tradicija Banja Luka spoj je modernog dizajna i domaće topline, stvoren da pruži jedinstveno gastronomsko iskustvo u prijatnom i elegantnom prostoru. Smješten na mirnoj lokaciji, svega nekoliko minuta od centra grada, restoran nudi savršen ambijent za ručak s porodicom, poslovni sastanak ili večeru uz prijatnu atmosferu. Svaki detalj enterijera pažljivo je biran kako bi se stvorio sklad između tradicije i savremenog ugostiteljstva, uz naglasak na udobnost i estetiku. Ako tražite moderan restoran u Banjaluci sa parkingom, odličnom uslugom i toplim gostoprimstvom – Restoran Tradicija je mjesto koje spaja ukus, stil i osjećaj doma.',
+    'about-text-food' => 'Naša kuhinja zasniva se na ljubavi prema domaćim receptima i svježim namirnicama. U Restoranu Tradicija pripremamo autentična jela "na kašiku", domaće pite, pečenje, roštilj i raznovrsne specijalitete koji čine osnovu tradicionalne kuhinje Banjaluke i šire regije. Poseban akcenat stavljamo na kvalitet i svježinu - svaki obrok priprema se od pažljivo odabranih lokalnih sastojaka i uz potpuno posvećenje naših kuhara. Kod nas se spajaju domaći ukusi i moderna prezentacija, stvarajući harmoniju između tradicije i novih kulinarskih trendova. Bilo da želite lagani ručak, porodično okupljanje ili večeru za dvoje, kod nas vas uvijek čeka okus koji se pamti.',
+    'about-text-rooms' => 'U sklopu objekta nalazi se i smještaj Tradicija - moderno opremljene dvokrevetne sobe koje pružaju udobnost, mir i vrhunski komfor. Sobe su idealne za goste koji žele da uživaju u spoju tradicionalnog šarma i savremenog dizajna, uz sve pogodnosti savremenog boravka. Gostima su na raspolaganju privatni parking, mogućnost online rezervacije, a uskoro i self check-in sistem koji omogućava jednostavan dolazak u bilo koje doba dana. Na samo nekoliko minuta od centra Banjaluke, smještaj Tradicija predstavlja idealan izbor za poslovna putovanja, turističke posjete i vikend odmore - mjesto gdje se mir, udobnost i gostoprimstvo spajaju u jedno iskustvo vrijedno pamćenja.',
+
 
     //FAQ - Pitanja
-    'faq-meta-title' => 'Restoran Tradicija | Najčešće postavljana pitanja',
-    'faq-meta-desc' => 'Saznajte šta naše posjetitelje i drage goste najviše zanima - Restoran Tradicija Banja Luka ',
-    'faq-meta-keywords' => 'pitanja, česta pitanja, do kada radite, mogu li rezervisati online, parking, imate li smještaj, kako rezervisati sobu',
+    'faq-meta-title' => 'Restoran Tradicija Banja Luka | Česta pitanja posjetilaca',
+    'faq-meta-desc' => 'Pronađite odgovore na najčešća pitanja o Restoranu Tradicija Banja Luka - radno vrijeme, parking, smještaj i sve što vas zanima prije dolaska.',
+    'faq-meta-keywords' => 'restoran tradicija banja luka, česta pitanja, faq, radno vrijeme, parking, smještaj, rezervacija sobe, restoran sa smještajem, informacije o restoranu, restoran banja luka',
+    'faq-description' => 'Dobrodošli u sekciju Najčešće postavljana pitanja restorana Tradicija Banja Luka.
+     Ovdje ćete pronaći odgovore na pitanja koja naši gosti najčešće postavljaju - od radnog vremena i mogućnosti rezervacije stola, do informacija o parkingu, muzici uživo, porodičnim ručkovima i smještaju u sklopu objekta.
+     Ako ne pronađete odgovor koji tražite, slobodno nas kontaktirajte putem telefona ili kontakt forme - naš tim će vam rado pomoći.',
+     'question-1' => 'Do kada radi Restoran Tradicija?',
+     'answer-1' => 'Restoran Tradicija u Banjaluci otvoren je svakog dana od 08:00h do 24:00h. Vikendom, za vrijeme večernjih događaja i muzike uživo, radno vrijeme se produžava do 01:00h. Preporučujemo da nas kontaktirate telefonom radi tačnih informacija za dan vašeg dolaska.',
+     'question-2' => 'Da li Restoran Tradicija ima svoj parking?',
+     'answer-2' => 'Da, naši gosti imaju obezbijeđen besplatan privatni parking odmah pored objekta. Parking je osvijetljen i dostupan tokom cijelog radnog vremena restorana i smještaja.',
+     'question-3' => 'Da li se može rezervisati sto unaprijed?',
+     'answer-3' => 'Naravno. Preporučujemo da rezervišete sto telefonom posebno vikendom ili u večernjim satima kada je restoran pun. Na taj način osiguravate najbolje mjesto za ručak, večeru ili proslavu.',
+     'question-4' => 'Ima li Restoran Tradicija muziku uživo?',
+     'answer-4' => 'Da, u našem restoranu redovno organizujemo muziku uživo i večeri uz dobar provod. Program se razlikuje po danima, pa nas možete kontaktirati ili pratiti naše društvene mreže za raspored i najave događaja.',
+     'question-5' => 'Da li restoran ima smještaj i sobe za prenoćište?',
+     'answer-5' => 'U sklopu objekta Tradicija nalazi se i smještaj sa moderno opremljenim dvokrevetnim sobama. Gosti restorana mogu jednostavno rezervisati sobu uz obrok ili proslavu, a na raspolaganju su Wi-Fi, klimatizacija i parking.',
+     'question-6' => 'Da li je restoran pogodan za porodične ručkove?',
+     'answer-6' => 'Da, naš restoran je porodično orijentisan - nudimo udoban ambijent i prostor prilagođen i odraslima i djeci. Porodični ručkovi, krštenja i rođendani su među najčešćim događajima koje organizujemo.',
+     'question-7' => 'Šta preporučujete od jela u restoranu Tradicija?',
+     'answer-7' => 'Gosti najčešće preporučuju naša tradicionalna jela: domaće supe i čorbe, teletinu ispod sača, tradicionalni specijalitet cicvara, pite i svježe pripremljene salate. Sve pripremamo od svježih domaćih namirnica kako bi svaki obrok imao onaj prepoznatljiv okus domaće kuhinje.',
 
     //Galerija
-    'gallery-meta-title' => 'Restoran Tradicija | Galerija fotografija',
-    'gallery-meta-desc' => 'Pogledajte neke od fotografija našeg restorana i soba za smještaj - Restoran Tradicija Banja Luka ',
-    'gallery-meta-keywords' => 'galerija fotografija, slike restorana, entrijer, sobe za smještaj, slike soba, fotografije tradicionalnih jela',
+    'gallery-meta-title' => 'Restoran Tradicija Banja Luka | Galerija fotografija ambijenta',
+    'gallery-meta-desc' => 'Pogledajte galeriju fotografija Restorana Tradicija u Banjaluci – moderan i elegantan ambijent sa elementima tradicije. Upoznajte prostor u kojem uživate.',
+    'gallery-meta-keywords' => 'Pogledajte galeriju fotografija Restorana Tradicija u Banjaluci – moderan i elegantan ambijent sa elementima tradicije. Upoznajte prostor u kojem uživate.',
+    'gallery-description' => 'Dobrodošli u galeriju Restorana Tradicija - zavirite u naš elegantni prostor u kojem se tradicija susreće sa modernim dizajnom. Fotografije prikazuju ambijent u kojem se uživa u opuštenoj atmosferi, toplim detaljima i pažljivo, sa ljubavlju uređenom enterijeru našeg restorana.',
 
     //Kontakt
-    'contact-meta-title' => 'Restoran Tradicija | Kontaktirajte nas',
-    'contact-meta-desc' => 'Kontakt forma za slanje poruka na web stranici Restoran Tradicija Banja Luka',
-    'contact-meta-keywords' => 'kontakt, kontaktirajte nas, poruke, pošaljite poruku, postavite pitanje, sve što vas zanima',
+    'contact-meta-title' => 'Restoran Tradicija Banja Luka | Kontakt informacije',
+    'contact-meta-desc' => 'Kontaktirajte Restoran Tradicija Banja Luka za sve informacije o ponudi, smještaju i događajima. Tu smo da odgovorimo na sva vaša pitanja.',
+    'contact-meta-keywords' => 'restoran tradicija banja luka, kontakt, kontakt informacije, telefon restoran, email restoran, lokacija, adresa, pošaljite poruku, postavite pitanje, restoran u banjaluci',
+
+    //Kuhinja
+    'cuisine' => 'Kuhinja',
+    'cuisine-title' => 'Tradicionalna Kuhinja',
+    'cuisine-meta-title' => 'Restoran Tradicija | Tradicionalna kuhinja i domaća jela Banja Luka',
+    'cuisine-meta-desc' => 'Uživajte u tradicionalnoj kuhinji restorana Tradicija u Banjaluci. Domaća jela pripremljena od svježih namirnica, autentični ukusi i gastronomsko iskustvo sa dušom.',
+    'cuisine-meta-keywords' => 'tradicionalna kuhinja banja luka, domaća jela, restoran tradicija, banjalučka hrana, autentični ukusi, domaća kuhinja, lokalna gastronomska ponuda, ručak banja luka',
+    'cuisine-description' => 'Dobrodošli u tradicionalnu kuhinju restorana Tradicija - mjesto gdje domaći ukusi Banjaluke oživljavaju kroz spoj kulinarskog umijeća i autentičnih recepata. Naša kuhinja njeguje duh domaće hrane i bogatu tradiciju pripreme jela po starinskim receptima, uz dašak modernog pristupa. Ovdje svaki obrok nosi priču o porodičnom gostoprimstvu, pažljivo biranim sastojcima i neponovljivim mirisima koji podsjećaju na pravi okus doma.',
+    'cuisine-text-title' => 'Gastronomski doživljaj',
+    'cuisine-text' => 'Naša kuhinja zasniva se na ljubavi prema domaćim receptima i svježim namirnicama. U restoranu Tradicija pripremamo autentična jela "na kašiku", domaće pite, pečenje, roštilj i raznovrsne specijalitete koji čine osnovu tradicionalne kuhinje Banjaluke i šire regije. Poseban akcenat stavljamo na kvalitet i svježinu - svaki obrok priprema se od pažljivo odabranih lokalnih sastojaka i uz potpuno posvećenje naših kuhara. Kod nas se spajaju domaći ukusi i moderna prezentacija, stvarajući harmoniju između tradicije i savremenih kulinarskih trendova. Bilo da želite lagani ručak, porodično okupljanje ili večeru za dvoje, kod nas vas uvijek čeka gastronomski doživljaj koji se pamti.',
 
 
 ];

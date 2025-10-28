@@ -24,14 +24,15 @@ Route::prefix('{locale}')
         require __DIR__ . '/auth.php';
 
         Route::get('/', HomePage::class)->name('home');
-    //     Route::get('/contact-us', ContactPage::class)->name('contact-us');
+        Route::get('/contact-us', ContactPage::class)->name('contact-us');
 
-    //     Route::view('/about', 'pages.about')->name('about');
-    //     Route::view('/faq', 'pages.faq')->name('faq');
-    //     Route::view('/gallery', 'pages.gallery')->name('gallery');
-    //    // Route::view('/terms', 'pages.terms')->name('terms');
-    //     Route::view('/privacy', 'pages.privacy')->name('privacy');
-    //     Route::view('/cookies', 'pages.cookies')->name('cookies');
+        Route::view('/cuisine', 'pages.cuisine')->name('cuisine');
+        Route::view('/about', 'pages.about')->name('about');
+        Route::view('/faq', 'pages.faq')->name('faq');
+        Route::view('/gallery', 'pages.gallery')->name('gallery');
+        Route::view('/terms', 'pages.terms')->name('terms');
+        Route::view('/privacy', 'pages.privacy')->name('privacy');
+        Route::view('/cookies', 'pages.cookies')->name('cookies');
     });
 
 // Route::view('dashboard', 'dashboard')

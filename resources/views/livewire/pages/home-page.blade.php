@@ -20,10 +20,10 @@
                 <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-5">
 
                     {{-- Restoran --}}
-                    <a href="#"
+                    <a href="{{ route('cuisine') }}"
                         class="group relative rounded-xl bg-primary/70 py-3 text-white transition duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70">
                         <div class="flex flex-col items-center justify-center">
-                            <svg class="size-10 lg:size-12" xmlns="http://www.w3.org/2000/svg" version="1.1"
+                            <svg class="size-9 md:size-10 lg:size-12" xmlns="http://www.w3.org/2000/svg" version="1.1"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0"
                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve">
                                 <g transform="matrix(0.92,0,0,0.92,20.48783966064451,20.4862399291992)">
@@ -52,7 +52,7 @@
                     <a href="#"
                         class="group relative rounded-xl bg-secondary/70 py-3 text-white transition duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-secondary">
                         <div class="flex flex-col items-center">
-                            <svg class="size-10 lg:size-12" xmlns="http://www.w3.org/2000/svg" version="1.1"
+                            <svg class="size-9 md:size-10 lg:size-12" xmlns="http://www.w3.org/2000/svg" version="1.1"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0"
                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve">
                                 <g
@@ -139,23 +139,23 @@
     </header>
 
 
+    {{-- Poslovica --}}
     <section class="w-full px-2 pb-8 text-white md:pb-4 bg-primary">
         <blockquote class="relative max-w-3xl p-4 mx-auto text-xl leading-relaxed text-center md:mt-8">
-            <!-- veliki navodnik -->
             <span class="absolute font-serif text-6xl italic pointer-events-none select-none -top-1 left-5">“</span>
-
             <p class="max-w-2xl mx-auto italic">
                 @lang('messages.wisdom')
             </p>
-
             <footer class="pl-40 mt-3 text-base italic">* @lang('messages.wisdom-paraf')</footer>
         </blockquote>
     </section>
 
 
     <section class="flex flex-col w-full lg:flex-row">
-        <div class="flex flex-col items-center justify-center px-4 py-8 w-fullm lg:w-1/2 md:px-10 md:py-16 lg:py-6">
-            <div class="flex items-center mx-auto border-l-8 border-primary">
+        <div class="flex flex-col items-center justify-center px-2 py-8 sm:px-4 w-fullm lg:w-1/2 md:px-10 md:py-16 lg:py-6">
+            <img src="{{ asset('images/svg/tradicija-t-logo.svg') }}" class="size-12 md:size-14 xl:size-16" alt="Restoran Tradicija - Banja Luka">
+
+            <div class="flex items-center mx-auto mt-8 border-l-8 border-primary">
                 <div class="min-w-0 pl-3">
                     <h2 class="overflow-hidden text-2xl font-medium lg:text-xl xl:text-2xl text-ellipsis whitespace-nowrap">
                         TRADICIJA @lang('messages.restaurant')
@@ -167,18 +167,75 @@
                 @lang('messages.restaurant-home-text')
             </p>
 
-            <a href="#" class="px-5 py-2 mt-4 font-medium text-white rounded lg:text-sm xl:text-base md:mt-8 lg:mt-4 xl:mt-8 bg-primary hover:bg-secondary">
-                @lang('messages.restaurant')
+
+            <a href="{{ route('about') }}" class="px-5 py-2 mt-4 font-medium text-white uppercase rounded lg:text-sm xl:text-base md:mt-8 lg:mt-4 xl:mt-8 bg-primary hover:bg-secondary">
+                @lang('pages.about')
             </a>
         </div>
         <div class="w-full lg:w-1/2">
-            <img src="{{ asset('images/base/test-home-restoran.webp') }}" alt="Restoran Tradicija">
+            <img src="{{ asset('images/gallery/tradicija-1200-restoran-2.webp') }}" alt="Restoran Tradicija">
         </div>
     </section>
 
     <section class="flex flex-col w-full lg:flex-row">
-        <div class="flex flex-col items-center justify-center w-full px-4 py-8 lg:w-1/2 md:px-10 md:py-16 lg:py-10 lg:py-6 lg:order-2">
-            <div class="flex items-center mx-auto border-l-8 border-primary">
+        <div class="flex flex-col items-center justify-center w-full px-2 py-8 sm:px-4 lg:w-1/2 md:px-10 md:py-16 lg:py-6 lg:order-2">
+
+            <img src="{{ asset('images/svg/tradicija-t-logo-secondary.svg') }}" class="size-12 md:size-14 xl:size-16" alt="Restoran Tradicija - Banja Luka">
+
+            <div class="flex items-center mx-auto mt-8 border-l-8 border-secondary">
+                <div class="min-w-0 pl-3">
+                    <h2 class="overflow-hidden text-2xl font-medium uppercase lg:text-xl xl:text-2xl text-ellipsis whitespace-nowrap">
+                        @lang('messages.music-home-title')
+                    </h2>
+                </div>
+            </div>
+
+            <p class="px-4 mt-6 lg:text-sm xl:text-base">
+                @lang('messages.music-home-text')
+            </p>
+
+            {{-- <a href="#" class="px-5 py-2 mt-4 font-medium text-white uppercase rounded lg:text-sm xl:text-base md:mt-8 lg:mt-4 xl:mt-8 bg-secondary hover:bg-primary">
+                @lang('pages.rooms')
+            </a> --}}
+        </div>
+
+        <div class="w-full lg:order-1 lg:w-1/2">
+            <img src="{{ asset('images/gallery/tradicija-1200-restoran-7.webp') }}" alt="Restoran Tradicija">
+        </div>
+    </section>
+
+     <section class="flex flex-col w-full lg:flex-row">
+        <div class="flex flex-col items-center justify-center px-2 py-8 sm:px-4 w-fullm lg:w-1/2 md:px-10 md:py-16 lg:py-6">
+
+            <img src="{{ asset('images/svg/tradicija-t-logo.svg') }}" class="size-12 md:size-14 xl:size-16" alt="Restoran Tradicija - Banja Luka">
+
+            <div class="flex items-center mx-auto mt-8 border-l-8 border-primary">
+                <div class="min-w-0 pl-3">
+                    <h2 class="overflow-hidden text-2xl font-medium uppercase lg:text-xl xl:text-2xl text-ellipsis whitespace-nowrap">
+                        @lang('messages.food-home-title')
+                    </h2>
+                </div>
+            </div>
+
+            <p class="px-4 mt-6 lg:text-sm xl:text-base">
+                @lang('messages.food-home-text')
+            </p>
+
+            <a href="{{ route('cuisine') }}" class="px-5 py-2 mt-4 font-medium text-white uppercase rounded lg:text-sm xl:text-base md:mt-8 lg:mt-4 xl:mt-8 bg-primary hover:bg-secondary">
+                @lang('pages.cuisine')
+            </a>
+        </div>
+        <div class="w-full lg:w-1/2">
+            <img src="{{ asset('images/gallery/tradicija-1200-hrana-3.webp') }}" alt="Restoran Tradicija">
+        </div>
+    </section>
+
+    <section class="flex flex-col w-full lg:flex-row">
+        <div class="flex flex-col items-center justify-center w-full px-2 py-8 sm:px-4 lg:w-1/2 md:px-10 md:py-16 lg:py-6 lg:order-2">
+
+            <img src="{{ asset('images/svg/tradicija-t-logo-secondary.svg') }}" class="size-12 md:size-14 xl:size-16" alt="Restoran Tradicija - Banja Luka">
+
+            <div class="flex items-center mx-auto mt-8 border-l-8 border-secondary">
                 <div class="min-w-0 pl-3">
                     <h2 class="overflow-hidden text-2xl font-medium lg:text-xl xl:text-2xl text-ellipsis whitespace-nowrap">
                         TRADICIJA @lang('messages.accommodation')
@@ -196,7 +253,7 @@
         </div>
 
         <div class="w-full lg:order-1 lg:w-1/2">
-            <img src="{{ asset('images/base/test-home-sobe.webp') }}" alt="Restoran Tradicija">
+            <img src="{{ asset('images/gallery/tradicija-1200-sobe-3.webp') }}" alt="Restoran Tradicija">
         </div>
     </section>
 
@@ -237,10 +294,14 @@
         </div>
     </section> --}}
 
-    <div class="flex items-center justify-center w-full py-5 bg-secondary">
-      <p class="text-2xl font-light tracking-wider text-center text-white">
+    {{-- <div class="flex items-center justify-center w-full py-5 bg-whute">
+      <p class="text-2xl font-light tracking-wider text-center text-primary">
          TRADICIJA @lang('messages.restaurant')
       </p>
-    </div>
+    </div> --}}
+
+    {{-- <div class="w-full">
+        <img src="{{ asset('images/base/trdicija-ulaz-logo-3.webp') }}" alt="">
+    </div> --}}
 
 </div>

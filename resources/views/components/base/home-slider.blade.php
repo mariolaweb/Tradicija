@@ -16,9 +16,9 @@
                 x-transition:leave-end="transition-opacity ease-in opacity-0">
 
                 <img class="object-cover object-center w-full h-full md:hidden" alt="Restoran Tradicija"
-                    src="{{asset('images/base/tradicija-slide-test-mob-11.webp')}}" />
+                    src="{{asset('images/base/tradicija-slide-mob-1.webp')}}" />
                 <img class="hidden object-cover w-full min-h-screen md:flex" alt="Restoran Tradicija"
-                    src="{{asset('images/base/tradicija-slide-test-11.webp')}}" />
+                    src="{{asset('images/base/tradicija-slide-1.webp')}}" />
                 <div class="absolute inset-0 z-10"></div>
             </div>
             <div class="absolute bg-transparent" x-show="active == 2"
@@ -28,8 +28,8 @@
                 x-transition:leave="transition duration-1000" x-transition:leave-start="transition"
                 x-transition:leave-end="transition-opacity ease-in opacity-0">
                 <img class="object-cover object-center w-full h-full md:hidden" alt="Restoran Tradicija"
-                    src="{{asset('images/base/tradicija-slide-test-mob-21.webp')}}" />
-                <img class="hidden object-cover min-h-screen md:flex" src="{{asset('images/base/tradicija-slide-test-21.webp')}}" alt="Restoran Tradicija" />
+                    src="{{asset('images/base/tradicija-slide-mob-2.webp')}}" />
+                <img class="hidden object-cover min-h-screen md:flex" src="{{asset('images/base/tradicija-slide-2.webp')}}" alt="Restoran Tradicija" />
                 <div class="absolute inset-0 z-10"></div>
             </div>
         </div>

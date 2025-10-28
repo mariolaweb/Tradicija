@@ -49,7 +49,7 @@
 <body class="relative font-sans antialiased text-gray-900" x-data="{ 'openSidebar': false, 'atTop': true }" x-cloak>
     <x-base.topbar />
     <x-base.guest-navbar />
-    {{-- <x-base.home-menu-sidebar /> --}}
+    <x-base.home-menu-sidebar />
     <div class="flex flex-col items-center justify-center min-h-screen bg-gray-100 sm:pt-0">
 
         <div class="w-full">

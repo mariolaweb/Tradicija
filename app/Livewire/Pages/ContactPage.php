@@ -42,6 +42,7 @@ class ContactPage extends Component
 
     public function submitForm()
     {
+        sleep(2);
         $this->validate();
         $data = $this->modelData();
 
