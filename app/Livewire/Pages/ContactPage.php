@@ -50,7 +50,7 @@ class ContactPage extends Component
 
         $contact = Contact::create($data);
 
-        Mail::to('limunzarada@gmail.com')
+        Mail::to('tradicijabl@gmail.com')
         ->cc(['mariolawebpay@gmail.com'])
         ->send(new ContactMail($contact));
 
