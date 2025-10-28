@@ -8,6 +8,8 @@ use App\Livewire\Admin\AdminContactMessages;
 use App\Livewire\RoomShow;
 use App\Livewire\RoomsList;
 
+
+
 /*
 Svaki posjet domeni bez locale segmenta (domena.com/) odmah preusmjeri na domena.com/bs
  (ili koji god je app()->getLocale() u trenutku). Time se osigurava da prvi segment uvijek
@@ -24,6 +26,19 @@ Route::prefix('{locale}')
 
         // prebacujemo auth rute u ovu grupu ruta.
         require __DIR__ . '/auth.php';
+
+
+        Route::get('/mail-test', function () {
+    try {
+        \Illuminate\Support\Facades\Mail::raw('Test body', function ($m) {
+            $m->to('limunzarada@gmail.com')->subject('SMTP test');
+        });
+        return 'OK — poslato (provjeri inbox/spam).';
+    } catch (\Throwable $e) {
+        Log::error('Mail error: '.$e->getMessage());
+        return 'Mail error: '.$e->getMessage();
+    }
+});
 
         Route::get('/', HomePage::class)->name('home');
         Route::get('/rooms', RoomsList::class)->name('rooms');
