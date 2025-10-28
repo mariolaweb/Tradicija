@@ -14,7 +14,7 @@
     ];
 @endphp
 <x-guest-layout>
-    <div class="min-h-screen px-2 pb-2 md:pb-14 lg:pb-20" x-data="gallery()">
+    <div class="min-h-screen px-2 pb-2 md:pb-14 lg:pb-20">
 
         <div class="flex flex-col items-center justify-center w-full mt-10 md:mt-14">
 

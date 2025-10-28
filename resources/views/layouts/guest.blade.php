@@ -50,7 +50,7 @@
     <x-base.topbar />
     <x-base.guest-navbar />
     <x-base.home-menu-sidebar />
-    <div class="flex flex-col items-center justify-center min-h-screen bg-gray-100 sm:pt-0">
+    <div class="flex flex-col min-h-screen bg-gray-100 sm:pt-0">
 
         <div class="w-full">
             {{ $slot }}

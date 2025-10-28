@@ -15,16 +15,16 @@ class ContactPage extends Component
     public $name;
     #[Validate('required|email|max:255')]
     public $email;
-    #[Validate('nullable|regex:/^[0-9+\s\-]{1,4}$/')]
-    public $country_code;
+    // #[Validate('nullable|regex:/^[0-9+\s\-]{1,4}$/')]
+    // public $country_code;
     #[Validate('nullable|regex:/^[0-9+\s\-]{8,11}$/')]
     public $phone;
     #[Validate('required|string|min:5')]
     public $subject;
     #[Validate('required|string|min:10')]
     public $message;
-    #[Validate('accepted')]
-    public $termsAccepted = false;
+    // #[Validate('accepted')]
+    // public $termsAccepted = false;
 
 
     public function modelData()
@@ -47,10 +47,11 @@ class ContactPage extends Component
         $data = $this->modelData();
 
       //  dd($data);
+
         $contact = Contact::create($data);
 
-        Mail::to('info@test.com')
-        ->cc(['admin1@example.com', 'admin2@example.com'])
+        Mail::to('limunzarada@gmail.com')
+        ->cc(['mariolawebpay@gmail.com'])
         ->send(new ContactMail($contact));
 
         $this->reset();

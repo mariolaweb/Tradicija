@@ -5,6 +5,8 @@ use App\Livewire\Pages\ContactPage;
 use Illuminate\Support\Facades\Route;
 use App\Livewire\Admin\AdminCategories;
 use App\Livewire\Admin\AdminContactMessages;
+use App\Livewire\RoomShow;
+use App\Livewire\RoomsList;
 
 /*
 Svaki posjet domeni bez locale segmenta (domena.com/) odmah preusmjeri na domena.com/bs
@@ -24,6 +26,7 @@ Route::prefix('{locale}')
         require __DIR__ . '/auth.php';
 
         Route::get('/', HomePage::class)->name('home');
+        Route::get('/rooms', RoomsList::class)->name('rooms');
         Route::get('/contact-us', ContactPage::class)->name('contact-us');
 
         Route::view('/cuisine', 'pages.cuisine')->name('cuisine');

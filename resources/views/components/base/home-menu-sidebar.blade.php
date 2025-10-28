@@ -21,7 +21,7 @@
             </p>
         </a>
 
-        <a href="#" wire:navigate class="w-full transition duration-200 group">
+        <a href="{{ route('rooms') }}" wire:navigate class="w-full transition duration-200 group">
             <p class="inline-flex items-center p-2 ml-4 group-hover:text-secondary md:group-hover:text-primary">
                 <span class="mr-3 md:mr-4 size-3 md:size-4 bg-primary group-hover:bg-white"></span>
                 @lang('pages.rooms')

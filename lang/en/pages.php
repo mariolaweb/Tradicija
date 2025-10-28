@@ -109,6 +109,25 @@ If you don’t find what you’re looking for, feel free to give us a call or se
     'contact-meta-desc' => 'Reach out to Tradicija Restaurant Banja Luka for any questions about our menu, accommodation, or upcoming events. We’re here to help!',
     'contact-meta-keywords' => 'tradicija restaurant banja luka, contact us, restaurant phone number, email address, location, send a message, ask a question, restaurant info, banja luka dining',
 
+    // Cuisine
+'cuisine' => 'Cuisine',
+'cuisine-title' => 'Traditional Cuisine',
+'cuisine-meta-title' => 'Tradicija Restaurant | Traditional Cuisine & Homemade Dishes in Banja Luka',
+'cuisine-meta-desc' => 'Enjoy the traditional flavors of Tradicija Restaurant in Banja Luka. Homemade dishes made from fresh ingredients, authentic taste, and soul-filled dining experience.',
+'cuisine-meta-keywords' => 'traditional food banja luka, homemade dishes, tradicija restaurant, banja luka cuisine, authentic flavors, home-style cooking, local food experience, lunch banja luka',
+'cuisine-description' => 'Welcome to the traditional kitchen of Tradicija Restaurant - where the local flavors of Banja Luka come to life through culinary craftsmanship and authentic recipes. Our cuisine celebrates the spirit of home-cooked meals and the rich tradition of preparing food the old-fashioned way, with a modern twist. Every dish tells a story of family hospitality, carefully chosen ingredients, and unforgettable aromas that bring back the true taste of home.',
+'cuisine-text-title' => 'A Culinary Experience to Remember',
+'cuisine-text' => 'Our kitchen is built on a love for traditional recipes and fresh, locally sourced ingredients. At Tradicija, we prepare authentic comfort dishes like stews, handmade pies, slow-roasted meats, grilled specialties, and regional classics that define the traditional cuisine of Banja Luka and beyond. We focus on quality and freshness - every meal is made with handpicked local produce and the full dedication of our chefs. The result is a perfect harmony between tradition and modern culinary presentation. Whether you\'re craving a light lunch, a cozy family gathering, or a romantic dinner - a memorable food experience awaits you here.',
+
+// Rooms
+'rooms-meta-title' => 'Tradicija Restaurant Banja Luka | Rooms & Comfortable Stay',
+'rooms-meta-desc' => 'Stay at Tradicija Restaurant in Banja Luka - modern rooms, free private parking, and a peaceful location. Ideal for business trips, weekend getaways, or longer stays in Banja Luka.',
+'rooms-meta-keywords' => 'banja luka rooms, accommodation banja luka, hotel, apartments, overnight stay, restaurant with rooms, private parking, cozy rooms, luxury accommodation, tradicija rooms',
+'rooms-text' => 'Welcome to the rooms at Tradicija Restaurant - your home in the heart of Banja Luka. We offer modern, comfortable double rooms perfect for business trips, weekend getaways, or extended stays. Each room comes with air conditioning, Wi-Fi, TV, and a private bathroom, along with free private parking for guests. Located in a quiet area just minutes from the city center, our accommodation is a great choice for travelers looking for comfort, convenience, and affordability in Banja Luka. You can book online or by phone, and our friendly staff will make sure your stay is relaxed, pleasant, and memorable.',
+
+'reception-title' => 'Reception',
+'reception-text' => 'To book a room or check availability in Banja Luka, call the reception at Tradicija Restaurant, or contact us via Viber or WhatsApp.',
+
 
 
 ];

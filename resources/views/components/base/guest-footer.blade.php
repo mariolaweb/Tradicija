@@ -122,10 +122,10 @@
                     <svg class="mr-3 text-white size-10" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 480 480" style="enable-background:new 0 0 512 512" xml:space="preserve"><g>
                         <path d="M256 128c-8.832 0-16 7.168-16 16s7.168 16 16 16c35.296 0 64 28.704 64 64 0 8.832 7.168 16 16 16s16-7.168 16-16c0-52.928-43.072-96-96-96z" fill="currentColor" opacity="1" data-original="#000000" class=""></path><path d="M256 64c-8.832 0-16 7.168-16 16s7.168 16 16 16c70.592 0 128 57.408 128 128 0 8.832 7.168 16 16 16s16-7.168 16-16c0-88.224-71.776-160-160-160z" fill="currentColor" opacity="1" data-original="#000000" class=""></path><path d="M256 0c-8.832 0-16 7.168-16 16s7.168 16 16 16c105.888 0 192 86.112 192 192 0 8.832 7.168 16 16 16s16-7.168 16-16C480 100.48 379.488 0 256 0zM432 352c-46.464 0-90.72-10.112-131.52-30.048-3.84-1.92-8.256-2.144-12.256-.736a16.138 16.138 0 0 0-9.184 8.16l-25.152 52.064C188.8 345.12 134.912 291.264 98.624 226.176l52.032-25.216c3.84-1.856 6.752-5.152 8.16-9.184 1.376-4 1.12-8.416-.768-12.256C138.112 138.72 128 94.464 128 48c0-8.832-7.168-16-16-16H16C7.168 32 0 39.168 0 48c0 238.208 193.792 432 432 432 8.832 0 16-7.168 16-16v-96c0-8.832-7.168-16-16-16z" fill="currentColor" opacity="1" data-original="#000000" class=""></path></g>
                     </svg>
-                    <p class="py-1 text-4xl font-black text-center md:text-3xl ">
+                    <p class="py-1 text-4xl font-bold text-center md:text-3xl ">
                         066 156 156
                     </p>
-                 </div>
+                </div>
 
                 <p class="mt-1 text-xs text-center px-9">
                     @lang('messages.footer_call_message')
@@ -169,7 +169,7 @@
         <div class="flex pb-2 mx-auto text-sm">
             <a href="{{ route('home') }}" wire:navigate class="px-1 md:px-2 hover:text-secondary">@lang('pages.home')</a>|
             <a href="{{ route('cuisine') }}" wire:navigate class="px-1 md:px-2 hover:text-secondary">@lang('pages.cuisine')</a>|
-            <a href="#" wire:navigate class="px-1 md:px-2 hover:text-secondary">@lang('pages.rooms')</a>|
+            <a href="{{ route('rooms') }}" wire:navigate class="px-1 md:px-2 hover:text-secondary">@lang('pages.rooms')</a>|
             <a href="{{ route('faq') }}" wire:navigate class="px-1 md:px-2 hover:text-secondary">@lang('pages.faq')</a>|
             <a href="{{ route('gallery') }}" wire:navigate class="px-1 md:px-2 hover:text-secondary">@lang('pages.gallery')</a>|
             <a href="{{ route('about') }}" wire:navigate class="px-1 md:px-2 hover:text-secondary">@lang('pages.about')</a>|

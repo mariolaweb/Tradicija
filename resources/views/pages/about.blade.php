@@ -3,12 +3,12 @@
 @section('meta_keywords', __('pages.about-meta-keywords'))
 
 <x-guest-layout>
-      <div class="w-full min-h-screen pb-0 mx-auto max-w-7xl">
+    <div class="w-full min-h-screen pb-0 mx-auto max-w-7xl">
 
         <div class="flex flex-col w-full mt-10 md:mt-14">
 
             <div class="px-2">
-            <x-parts.breadcrumbs :pageTitle="__('pages.about')" />
+                <x-parts.breadcrumbs :pageTitle="__('pages.about')" />
             </div>
 
             <div class="flex flex-col items-center justify-center mt-3 md:mt-0">
@@ -24,65 +24,71 @@
         </div>
 
         <section class="flex flex-col w-full mt-10 lg:mt-16 lg:flex-row">
-        <div class="flex flex-col items-center justify-center px-2 py-8 sm:px-4 w-fullm lg:w-1/2 md:px-10 md:py-16 lg:py-6">
-            <div class="flex items-center mx-auto border-l-8 border-primary">
-                <div class="min-w-0 pl-3">
-                    <h2 class="overflow-hidden text-2xl font-medium uppercase lg:text-xl xl:text-2xl text-ellipsis whitespace-nowrap">
-                        @lang('messages.za-gurmane')
-                    </h2>
+            <div
+                class="flex flex-col items-center justify-center w-full px-2 py-8 sm:px-4 md:px-10 md:py-16 lg:w-1/2 lg:py-6">
+                <div class="flex items-center mx-auto border-l-8 border-primary">
+                    <div class="min-w-0 pl-3">
+                        <h2
+                            class="overflow-hidden text-2xl font-medium uppercase text-ellipsis whitespace-nowrap lg:text-xl xl:text-2xl">
+                            @lang('messages.za-gurmane')
+                        </h2>
+                    </div>
                 </div>
+
+                <p class="px-4 mt-6 lg:text-sm xl:text-base">
+                    @lang('pages.about-text-restoran')
+                </p>
+
+            </div>
+            <div class="w-full lg:w-1/2">
+                <img src="{{ asset('images/gallery/tradicija-1200-restoran-3.webp') }}" alt="Restoran Tradicija">
+            </div>
+        </section>
+
+        <section class="flex flex-col w-full lg:flex-row">
+            <div
+                class="flex flex-col items-center justify-center w-full px-2 py-8 sm:px-4 md:px-10 md:py-16 lg:order-2 lg:w-1/2 lg:py-10 lg:py-6">
+                <div class="flex items-center mx-auto border-l-8 border-primary">
+                    <div class="min-w-0 pl-3">
+                        <h2
+                            class="overflow-hidden text-2xl font-medium text-ellipsis whitespace-nowrap lg:text-xl xl:text-2xl">
+                            TRADICIJA @lang('messages.restaurant')
+                        </h2>
+                    </div>
+                </div>
+
+                <p class="px-4 mt-6 lg:text-sm xl:text-base">
+                    @lang('pages.about-text-food')
+                </p>
+
             </div>
 
-            <p class="px-4 mt-6 lg:text-sm xl:text-base">
-                @lang('pages.about-text-restoran')
-            </p>
-
-        </div>
-        <div class="w-full lg:w-1/2">
-            <img src="{{ asset('images/gallery/tradicija-1200-restoran-3.webp') }}" alt="Restoran Tradicija">
-        </div>
-    </section>
-
-    <section class="flex flex-col w-full lg:flex-row">
-        <div class="flex flex-col items-center justify-center w-full px-2 py-8 sm:px-4 lg:w-1/2 md:px-10 md:py-16 lg:py-10 lg:py-6 lg:order-2">
-            <div class="flex items-center mx-auto border-l-8 border-primary">
-                <div class="min-w-0 pl-3">
-                    <h2 class="overflow-hidden text-2xl font-medium lg:text-xl xl:text-2xl text-ellipsis whitespace-nowrap">
-                        TRADICIJA @lang('messages.restaurant')
-                    </h2>
-                </div>
+            <div class="w-full lg:order-1 lg:w-1/2">
+                <img src="{{ asset('images/gallery/tradicija-1200-hrana-2.webp') }}" alt="Restoran Tradicija">
             </div>
+        </section>
 
-            <p class="px-4 mt-6 lg:text-sm xl:text-base">
-                @lang('pages.about-text-food')
-            </p>
-
-        </div>
-
-        <div class="w-full lg:order-1 lg:w-1/2">
-            <img src="{{ asset('images/gallery/tradicija-1200-hrana-2.webp') }}" alt="Restoran Tradicija">
-        </div>
-    </section>
-
-    <section class="flex flex-col w-full lg:flex-row">
-        <div class="flex flex-col items-center justify-center px-2 py-8 sm:px-4 w-fullm lg:w-1/2 md:px-10 md:py-16 lg:py-6">
-            <div class="flex items-center mx-auto border-l-8 border-primary">
-                <div class="min-w-0 pl-3">
-                    <h2 class="overflow-hidden text-2xl font-medium lg:text-xl xl:text-2xl text-ellipsis whitespace-nowrap">
-                        TRADICIJA @lang('messages.accommodation')
-                    </h2>
+        <section class="flex flex-col w-full lg:flex-row">
+            <div
+                class="flex flex-col items-center justify-center px-2 py-8 w-fullm sm:px-4 md:px-10 md:py-16 lg:w-1/2 lg:py-6">
+                <div class="flex items-center mx-auto border-l-8 border-primary">
+                    <div class="min-w-0 pl-3">
+                        <h2
+                            class="overflow-hidden text-2xl font-medium text-ellipsis whitespace-nowrap lg:text-xl xl:text-2xl">
+                            TRADICIJA @lang('messages.accommodation')
+                        </h2>
+                    </div>
                 </div>
+
+                <p class="px-4 mt-6 lg:text-sm xl:text-base">
+                    @lang('pages.about-text-rooms')
+                </p>
+
             </div>
-
-            <p class="px-4 mt-6 lg:text-sm xl:text-base">
-                @lang('pages.about-text-rooms')
-            </p>
-
-        </div>
-        <div class="w-full lg:w-1/2">
-            <img src="{{ asset('images/gallery/tradicija-1200-sobe-2.webp') }}" alt="Restoran Tradicija">
-        </div>
-    </section>
+            <div class="w-full lg:w-1/2">
+                <img src="{{ asset('images/gallery/tradicija-1200-sobe-2.webp') }}" alt="Restoran Tradicija">
+            </div>
+        </section>
 
     </div>
 </x-guest-layout>

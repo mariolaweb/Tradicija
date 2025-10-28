@@ -42,14 +42,14 @@
                                 </g>
                             </svg>
                             <div class="min-w-0">
-                                <h3 class="font-medium tracking-wider text-center md:text-lg lg:text-xl">@lang('messages.restaurant')</h3>
+                                <h3 class="font-medium tracking-wider text-center uppercase md:text-lg lg:text-xl">@lang('messages.restaurant')</h3>
                             </div>
 
                         </div>
                     </a>
 
                     {{-- Smještaj --}}
-                    <a href="#"
+                    <a href="{{ route('rooms') }}"
                         class="group relative rounded-xl bg-secondary/70 py-3 text-white transition duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-secondary">
                         <div class="flex flex-col items-center">
                             <svg class="size-9 md:size-10 lg:size-12" xmlns="http://www.w3.org/2000/svg" version="1.1"
@@ -64,7 +64,7 @@
                                 </g>
                             </svg>
                             <div class="min-w-0">
-                                <h3 class="font-medium tracking-wider text-center md:text-lg lg:text-xl">@lang('messages.accommodation')</h3>
+                                <h3 class="font-medium tracking-wider text-center uppercase md:text-lg lg:text-xl">@lang('messages.accommodation')</h3>
                             </div>
 
                         </div>
@@ -157,7 +157,7 @@
 
             <div class="flex items-center mx-auto mt-8 border-l-8 border-primary">
                 <div class="min-w-0 pl-3">
-                    <h2 class="overflow-hidden text-2xl font-medium lg:text-xl xl:text-2xl text-ellipsis whitespace-nowrap">
+                    <h2 class="overflow-hidden text-2xl font-medium uppercase lg:text-xl xl:text-2xl text-ellipsis whitespace-nowrap">
                         TRADICIJA @lang('messages.restaurant')
                     </h2>
                 </div>
@@ -193,10 +193,6 @@
             <p class="px-4 mt-6 lg:text-sm xl:text-base">
                 @lang('messages.music-home-text')
             </p>
-
-            {{-- <a href="#" class="px-5 py-2 mt-4 font-medium text-white uppercase rounded lg:text-sm xl:text-base md:mt-8 lg:mt-4 xl:mt-8 bg-secondary hover:bg-primary">
-                @lang('pages.rooms')
-            </a> --}}
         </div>
 
         <div class="w-full lg:order-1 lg:w-1/2">
@@ -237,7 +233,7 @@
 
             <div class="flex items-center mx-auto mt-8 border-l-8 border-secondary">
                 <div class="min-w-0 pl-3">
-                    <h2 class="overflow-hidden text-2xl font-medium lg:text-xl xl:text-2xl text-ellipsis whitespace-nowrap">
+                    <h2 class="overflow-hidden text-2xl font-medium uppercase lg:text-xl xl:text-2xl text-ellipsis whitespace-nowrap">
                         TRADICIJA @lang('messages.accommodation')
                     </h2>
                 </div>
@@ -247,7 +243,7 @@
                 @lang('messages.rooms-home-text')
             </p>
 
-            <a href="#" class="px-5 py-2 mt-4 font-medium text-white uppercase rounded lg:text-sm xl:text-base md:mt-8 lg:mt-4 xl:mt-8 bg-secondary hover:bg-primary">
+            <a href="{{ route('rooms') }}" class="px-5 py-2 mt-4 font-medium text-white uppercase rounded lg:text-sm xl:text-base md:mt-8 lg:mt-4 xl:mt-8 bg-secondary hover:bg-primary">
                 @lang('pages.rooms')
             </a>
         </div>
