@@ -179,8 +179,8 @@
 
                     <div class="group">
                         <a href="tel:+38766156666"
-                            class="inline-flex items-center px-4 py-1 duration-300 bg-white border rounded-lg border-primary group-hover:bg-primary lg:px-6">
-                            <svg class="mr-3 size-8 text-primary group-hover:text-white"
+                            class="inline-flex items-center px-3 py-1 duration-300 bg-white border rounded-lg border-primary group-hover:bg-primary lg:px-6">
+                            <svg class="mr-2 sm:mr-3 size-8 text-primary group-hover:text-white"
                                 xmlns="http://www.w3.org/2000/svg" version="1.1"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0"
                                 viewBox="0 0 480 480" style="enable-background:new 0 0 512 512" xml:space="preserve">

@@ -16,8 +16,8 @@
                 </h1>
             </div>
 
-            <div class="w-full max-w-3xl px-6 mx-auto mt-2 lg:mt-10">
-                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-5">
+            <div class="w-full max-w-3xl px-6 mx-auto mt-4 lg:mt-10">
+                <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 md:gap-5">
 
                     {{-- Restoran --}}
                     <a href="{{ route('cuisine') }}"
