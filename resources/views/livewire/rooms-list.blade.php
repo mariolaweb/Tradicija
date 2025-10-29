@@ -233,7 +233,7 @@
                                 fill="currentColor" opacity="1" data-original="#000000" class=""></path>
                         </g>
                     </svg>
-                    <p><span class="text-base font-semibold uppercase"></span> tradicijabl@gmail.com</p>
+                    <p><span class="text-base font-semibold uppercase"></span> tradicijahotel@gmail.com</p>
                 </div>
                 {{-- Instagram --}}
                 <a href="https://www.instagram.com/tradicijahotel/" target="_blank"
