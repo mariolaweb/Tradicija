@@ -35,7 +35,7 @@ Route::prefix('{locale}')
         Route::view('/about', 'pages.about')->name('about');
         Route::view('/faq', 'pages.faq')->name('faq');
         Route::view('/gallery', 'pages.gallery')->name('gallery');
-        Route::view('/terms', 'pages.terms')->name('terms');
+       // Route::view('/terms', 'pages.terms')->name('terms');
         Route::view('/privacy', 'pages.privacy')->name('privacy');
         Route::view('/cookies', 'pages.cookies')->name('cookies');
     });
