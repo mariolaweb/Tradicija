@@ -47,7 +47,7 @@
 
         <section class="flex flex-col w-full lg:flex-row">
             <div
-                class="flex flex-col items-center justify-center w-full px-2 py-8 sm:px-4 md:px-10 md:py-16 lg:order-2 lg:w-1/2 lg:py-10 lg:py-6">
+                class="flex flex-col items-center justify-center w-full px-2 py-8 sm:px-4 md:px-10 md:py-16 lg:order-2 lg:w-1/2 lg:py-6">
                 <div class="flex items-center mx-auto border-l-8 border-primary">
                     <div class="min-w-0 pl-3">
                         <h2

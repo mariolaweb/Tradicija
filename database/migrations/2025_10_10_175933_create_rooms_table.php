@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('rooms', function (Blueprint $table) {
             $table->id();
+            $table->unsignedInteger('inventory_count')->default(1);
+            $table->decimal('base_price', 10, 2)->nullable();
+            $table->decimal('holiday_price', 10, 2)->nullable();
+            $table->boolean('is_holiday_active')->default(false);
+            $table->boolean('is_active')->default(true);
             $table->timestamps();
         });
     }

@@ -12,7 +12,7 @@
                     alt="Restoran Tradicija Banja Luka" />
 
                 <h1 class="text-3xl font-black leading-tight md:text-4xl lg:text-5xl">
-                    <span class="sr-only">TRADICIJA</span> <br />
+                    <span class="sr-only">@lang('messages.restaurant') TRADICIJA - Banja Luka</span> <br />
                 </h1>
             </div>
 

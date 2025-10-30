@@ -5,7 +5,7 @@
         x-data="{ open: false }">
 
         <img src="{{ asset('images/svg/logo-tradicija-full-white.svg') }}"
-            class="mx-auto size-28 md:mt-16 md:size-48 lg:size-56" alt="">
+            class="mx-auto size-28 md:mt-16 md:size-48 lg:size-56" alt="Restoran Tradicija Banja Luka">
 
         <a href="{{ route('home') }}" wire:navigate class="w-full transition duration-200 group">
             <p class="inline-flex items-center p-2 ml-4 group-hover:text-secondary md:group-hover:text-primary">
