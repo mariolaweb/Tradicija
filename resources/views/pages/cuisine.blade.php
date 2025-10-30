@@ -44,7 +44,8 @@
             <div class="flex items-center mx-auto mt-8 border-l-8 border-primary">
                 <div class="min-w-0 pl-3">
                     <h2 class="overflow-hidden text-2xl font-medium uppercase lg:text-xl xl:text-2xl text-ellipsis whitespace-nowrap">
-                        @lang('pages.cuisine-text-title')
+                        {{-- @lang('pages.cuisine-text-title') --}}
+                        @lang('messages.food-home-title')
                     </h2>
                 </div>
             </div>

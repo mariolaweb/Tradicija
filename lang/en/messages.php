@@ -27,7 +27,7 @@ return [
     'home_meta_description' => 'Enjoy authentic homemade food in the heart of Banja Luka. Restaurant Tradition blends local flavors, warm atmosphere and modern dining comfort.',
     'home_meta_keywords' => 'restaurant banja luka, traditional food, homemade cuisine, local dishes, restaurant tradition, banja luka restaurant, comfort food, etno restaurant, home-style meals, traditional dining, accommodation banja luka, rooms for rent banja luka, restaurant with rooms, lodging banja luka',
     'working-time-topbar' => 'Mon-Thu:08-00 | Fri-Sat:08-01 | Sun:09-00',
-    'working-time-footer' => 'Mon–Thu: 08:00 AM – 12:00 PM<br/>Fri-Sat: 08:00 AM – 01:00 AM<br/>Sunday: 09:00 AM – 12:00 PM',
+    'working-time-footer' => 'Mon–Thu: 08 AM – 12 PM<br/>Fri-Sat: 08 AM – 01 AM<br/>Sunday: 09 AM – 12 PM',
 
     'restaurant-home-text' => 'Tradicija Restaurant in Banja Luka blends elegance with a cozy, home-style vibe - perfect for family lunches, romantic dinners, or business meetups. Tucked away in a quiet part of town, it offers the perfect mix of comfort, great food, and hospitality you won’t forget. Stop by and see why we’ve become a go-to spot for true traditional dining.',
     'music-home-title' => 'Live Music & Good Vibes',

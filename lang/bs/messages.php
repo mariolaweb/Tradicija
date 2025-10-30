@@ -27,7 +27,7 @@ return [
     'home_meta_description' => 'Uživajte u autentičnoj domaćoj kuhinji u srcu Banjaluke. Restoran Tradicija nudi okuse prošlosti u toplom i savremenom ambijentu.',
     'home_meta_keywords' => 'restoran banjaluka, tradicionalna jela, domaća kuhinja, autentična hrana, restoran tradicija, banjaluka restoran, jela na kašiku, etno restoran, hrana kao kod kuće, restoran sa domaćom hranom, smještaj banjaluka, sobe za izdavanje banjaluka, restoran sa smještajem, noćenje u banjaluci',
     'working-time-topbar' => 'Pon-Čet:08-00 | Pet-Sub:08-01 | Ned:09-00',
-    'working-time-footer' => 'Pon-Čet: 08:00 h - 00:00 h<br/>Pet-Sub: 08:00 h - 01:00 h<br/>Nedjelja: 09:00 h - 00:00 h',
+    'working-time-footer' => 'Pon-Čet: 08h - 00h<br/>Pet-Sub: 08h - 01h<br/>Nedjelja: 09h - 00h',
     'restaurant-home-text' => 'Restoran Tradicija u Banjaluci spoj je elegancije i domaćeg ambijenta, idealan za porodične ručkove, romantične večere i poslovne sastanke. Smješten u mirnom dijelu grada, restoran nudi savršenu kombinaciju udobnosti, ukusne hrane i gostoprimstva koje se pamti. Posjetite nas i otkrijte zašto smo postali omiljeno mjesto za uživanje u pravoj domaćoj kuhinji.',
     'music-home-title' => 'Muzika i dobar provod',
     'music-home-text' => 'U Restoranu Tradicija svako veče može biti posebno uz muziku uživo, domaću atmosferu i osmijehe gostiju. Bilo da slavite rođendan, godišnjicu, organizujete porodično okupljanje ili samo želite večeru uz dobar provod, naši muzičari i ljubazno osoblje pobrinuće se da svaki trenutak bude nezaboravan. Uživajte u toplom ambijentu, ukusnoj hrani i ritmovima koji stvaraju pravo raspoloženje - jer Tradicija je mjesto gdje se spajaju dobra muzika, druženje i hedonizam.',
