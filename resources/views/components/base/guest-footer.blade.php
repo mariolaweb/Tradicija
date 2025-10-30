@@ -1,13 +1,11 @@
 <footer class="relative flex flex-col items-center w-full text-white bg-primary">
 
     <div class="w-full h-5 bg-secondary"></div>
-    {{-- <x-application-logo class="block w-auto h-36" /> --}}
 
     <div class="flex flex-col w-full pt-3 mx-auto md:flex-row md:justify-between md:items-center max-w-7xl">
 
         <div class="flex flex-col items-center order-1 w-full px-3 py-4 md:order-2 md:w-1/3 md:text-sm">
 
-            {{-- <x-application-logo class="block w-auto h-40" /> --}}
             <img src="{{ asset('images/svg/logo-white-tradicija-full.svg') }}" class="mx-auto h-28"
                     alt="Restoran Tradicija Banja Luka" />
 
@@ -32,11 +30,6 @@
                     </svg>
                 </a>
             </div>
-
-            {{-- <a href="https://banjalukacity.info/bs/profil/sheriff-grill-pub" class="inline-flex items-center pt-3" target="_blank" aria-label="Sheriff Grill Pub - Banja Luka City Info">
-                Banja Luka City
-                <img src="{{ asset('images/svg/info-yellow-black.svg') }}" class="w-auto h-5 ml-1" alt="Banja Luka City Info">
-            </a> --}}
         </div>
 
         <div class="flex flex-col order-1 w-4/5 px-3 py-4 mx-auto md:order-1 md:w-1/3 md:text-xs lg:space-y-1">
@@ -100,32 +93,32 @@
         <div class="flex flex-col items-center order-3 w-full p-4 px-1 mx-auto mt-8 space-y-1 text-base md:mt-0 md:w-1/3 sm:px-5 md:text-sm">
 
                 <div class="flex justify-center w-full text-sm space-x-7 md:space-x-4">
-                    <div class="flex flex-col items-center space-y-1">
+                    {{-- <div class="flex flex-col items-center space-y-1">
                         <a href="tel:+38766156156"><img src="{{ asset('images/svg/icon-phone.svg') }}" alt="Telefon" class="size-16 md:size-12"></a>
                         <span>@lang('messages.phone')</span>
-                    </div>
+                    </div> --}}
 
                     <div class="flex flex-col items-center space-y-1">
                         <a href="https://api.whatsapp.com/send?phone=38766156156">
-                            <img src="{{ asset('images/svg/icon-whatsapp.svg') }}" alt="WhatsApp" class="size-16 md:size-12"></a>
+                            <img src="{{ asset('images/svg/icon-whatsapp.svg') }}" alt="WhatsApp" class="transition duration-300 opacity-50 size-16 md:size-12 grayscale hover:opacity-100 hover:grayscale-0"></a>
                         <span>WhatsApp</span>
                     </div>
 
                     <div class="flex flex-col items-center space-y-1">
-                        <a href="viber://chat?number=%2b38766156156"><img src="{{ asset('images/svg/icon-viber.svg') }}" alt="Viber" class="size-16 md:size-12"></a>
+                        <a href="viber://chat?number=%2b38766156156"><img src="{{ asset('images/svg/icon-viber.svg') }}" alt="Viber" class="transition duration-300 opacity-50 size-16 md:size-12 grayscale hover:opacity-100 hover:grayscale-0"></a>
                         <span>Viber</span>
                     </div>
 
                 </div>
 
-                <div class="inline-flex items-center py-3">
+                <a href="tel:+38766156156" class="inline-flex items-center py-3">
                     <svg class="mr-3 text-white size-10" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 480 480" style="enable-background:new 0 0 512 512" xml:space="preserve"><g>
                         <path d="M256 128c-8.832 0-16 7.168-16 16s7.168 16 16 16c35.296 0 64 28.704 64 64 0 8.832 7.168 16 16 16s16-7.168 16-16c0-52.928-43.072-96-96-96z" fill="currentColor" opacity="1" data-original="#000000" class=""></path><path d="M256 64c-8.832 0-16 7.168-16 16s7.168 16 16 16c70.592 0 128 57.408 128 128 0 8.832 7.168 16 16 16s16-7.168 16-16c0-88.224-71.776-160-160-160z" fill="currentColor" opacity="1" data-original="#000000" class=""></path><path d="M256 0c-8.832 0-16 7.168-16 16s7.168 16 16 16c105.888 0 192 86.112 192 192 0 8.832 7.168 16 16 16s16-7.168 16-16C480 100.48 379.488 0 256 0zM432 352c-46.464 0-90.72-10.112-131.52-30.048-3.84-1.92-8.256-2.144-12.256-.736a16.138 16.138 0 0 0-9.184 8.16l-25.152 52.064C188.8 345.12 134.912 291.264 98.624 226.176l52.032-25.216c3.84-1.856 6.752-5.152 8.16-9.184 1.376-4 1.12-8.416-.768-12.256C138.112 138.72 128 94.464 128 48c0-8.832-7.168-16-16-16H16C7.168 32 0 39.168 0 48c0 238.208 193.792 432 432 432 8.832 0 16-7.168 16-16v-96c0-8.832-7.168-16-16-16z" fill="currentColor" opacity="1" data-original="#000000" class=""></path></g>
                     </svg>
                     <p class="py-1 text-4xl font-bold text-center md:text-3xl ">
                         066 156 156
                     </p>
-                </div>
+                </a>
 
                 <p class="mt-1 text-xs text-center px-9">
                     @lang('messages.footer_call_message')
