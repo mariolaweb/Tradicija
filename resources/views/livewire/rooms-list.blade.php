@@ -179,8 +179,8 @@
 
                     <div class="group">
                         <a href="tel:+38766156666"
-                            class="inline-flex items-center px-3 py-1 duration-300 bg-white border rounded-lg border-primary group-hover:bg-primary lg:px-6">
-                            <svg class="mr-2 sm:mr-3 size-8 text-primary group-hover:text-white"
+                            class="inline-flex items-center px-3 py-1 duration-300 bg-white rounded-lg shadow group-hover:bg-primary/20 lg:px-6">
+                            <svg class="mr-1.5 size-8 text-primary sm:mr-3"
                                 xmlns="http://www.w3.org/2000/svg" version="1.1"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0"
                                 viewBox="0 0 480 480" style="enable-background:new 0 0 512 512" xml:space="preserve">
@@ -199,26 +199,26 @@
                                     </path>
                                 </g>
                             </svg>
-                            <p class="py-1.5 text-center text-xl font-medium group-hover:text-white">
+                            <p class="py-1.5 text-center text-xl font-medium">
                                 066 156 666
                             </p>
                         </a>
                     </div>
 
-                    <div class="flex px-4 py-1 duration-300 bg-white border rounded-lg border-primary hover:bg-primary">
+                    <div class="flex px-4 py-1.5 duration-300 bg-white rounded-lg shadow hover:bg-primary/20">
                         <a href="https://api.whatsapp.com/send?phone=38766156666">
-                            <img src="{{ asset('images/svg/icon-whatsapp.svg') }}" alt="WhatsApp" class="size-10">
+                            <img src="{{ asset('images/svg/icon-whatsapp.svg') }}" alt="WhatsApp" class="size-9">
                         </a>
                     </div>
 
-                    <div class="flex px-4 py-1 duration-300 bg-white border rounded-lg border-primary hover:bg-primary">
+                    <div class="flex px-4 py-1.5 duration-300 bg-white rounded-lg shadow hover:bg-primary/20">
                         <a href="viber://chat?number=%2b38766156666">
-                            <img src="{{ asset('images/svg/icon-viber.svg') }}" alt="Viber" class="size-10">
+                            <img src="{{ asset('images/svg/icon-viber.svg') }}" alt="Viber" class="size-9">
                         </a>
                     </div>
                 </div>
 
-                 {{-- Email --}}
+                {{-- Email --}}
                 <div class="mt-5 flex items-center space-x-1.5">
                     <svg class="mr-1.5 size-7 text-primary" xmlns="http://www.w3.org/2000/svg" version="1.1"
                         xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0"
@@ -259,6 +259,64 @@
 
             </div>
         </section>
+
+
+        {{-- Vrste soba --}}
+        <section class="flex flex-col px-2 mt-20">
+            <div class="flex flex-col w-full gap-3 md:gap-4 lg:flex-row">
+                <div class="flex flex-col w-full p-2 mx-auto bg-white rounded-lg shadow sm:w-4/5 lg:w-1/2">
+
+                    <div class="flex flex-col items-center w-full p-2 rounded-md bg-primary/20">
+                        <div class="flex items-center mx-auto border-l-8 border-primary">
+                            <div class="min-w-0 pl-3">
+                                <h2
+                                    class="overflow-hidden text-2xl font-medium uppercase text-ellipsis whitespace-nowrap lg:text-xl xl:text-2xl">
+                                    Double Room - 22 <span class="normal-case">m</span><sup>2</sup>
+                                </h2>
+                            </div>
+                        </div>
+                        <p class="inline-flex items-center mt-2 text-xl">
+                            Soba sa 1 bračnim krevetom
+                        <svg class="ml-3 size-8 sm:size-10 text-primary" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512" xml:space="preserve"><g transform="matrix(1.1399999999999992,0,0,1.1399999999999992,-4.479999999999976,-4.479999732971159)">
+                            <path d="M57 38.24H7a3.002 3.002 0 0 0-3 3v2.02a3.002 3.002 0 0 0 3 3h50a3.002 3.002 0 0 0 3-3v-2.02a3.002 3.002 0 0 0-3-3zM57.99 36.34v-2.79c0-2.94-2.7-5.34-6.02-5.34H12.02C8.7 28.21 6 30.61 6 33.55v2.79c.52-.134 51.67-.07 51.99 0zM48.85 48.26v1.53a2.006 2.006 0 0 0 2 2h2.3a2.006 2.006 0 0 0 2-2v-1.53zM8.85 48.26v1.53a2.006 2.006 0 0 0 2 2h2.3a2.006 2.006 0 0 0 2-2v-1.53zM15 26.21v-1.76a3.002 3.002 0 0 1 3-3h8a3.002 3.002 0 0 1 3 3v1.76h6v-1.76a3.002 3.002 0 0 1 3-3h8a3.002 3.002 0 0 1 3 3v1.76c.568-.004 3.66.02 4 .07v-9.07a5.008 5.008 0 0 0-5-5H16a5.008 5.008 0 0 0-5 5v9.07c.536-.091 4-.07 4-.07z" fill="currentColor" opacity="1" data-original="#000000" class=""></path><path d="M18 23.45a.997.997 0 0 0-1 1v1.76h10v-1.76a.997.997 0 0 0-1-1zM38 23.45a.997.997 0 0 0-1 1v1.76h10v-1.76a.997.997 0 0 0-1-1z" fill="currentColor" opacity="1" data-original="#000000" class=""></path></g>
+                        </svg>
+                        </p>
+                    </div>
+
+                   <x-parts.room-details />
+                </div>
+
+
+
+                <div class="flex flex-col w-full p-2 mx-auto bg-white rounded-lg shadow sm:w-4/5 lg:w-1/2">
+
+                    <div class="flex flex-col items-center w-full p-2 rounded-md bg-primary/20">
+                        <div class="flex items-center mx-auto border-l-8 border-primary">
+                            <div class="min-w-0 pl-3">
+                                <h2
+                                    class="overflow-hidden text-2xl font-medium uppercase text-ellipsis whitespace-nowrap lg:text-xl xl:text-2xl">
+                                    Twin Room - 20 <span class="normal-case">m</span><sup>2</sup>
+                                </h2>
+                            </div>
+                        </div>
+                        <p class="inline-flex items-center mt-2 text-xl">
+                            Soba sa 2 odvojena kreveta
+                            <svg class="ml-2.5 size-8 sm:size-10 text-primary" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 48 48" style="enable-background:new 0 0 512 512" xml:space="preserve"><g transform="matrix(0.840000000000001,0,0,0.840000000000001,3.839999999999961,3.9199999999999733)"><g data-name="Single Bed">
+                                <path d="M42 42h-6v1a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2zM12 42H6v1a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2zM33 19v1H15v-1a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z" fill="currentColor" opacity="1" data-original="#000000" class=""></path><path d="M34 4H14a7.008 7.008 0 0 0-7 7v9.94a8.988 8.988 0 0 1 4-.94h2v-1a6 6 0 0 1 6-6h10a6 6 0 0 1 6 6v1h2a8.988 8.988 0 0 1 4 .94V11a7.008 7.008 0 0 0-7-7zM4 34v4a2 2 0 0 0 2 2h36a2 2 0 0 0 2-2v-4zM44 32v-3a7 7 0 0 0-7-7H11a7 7 0 0 0-7 7v3z" fill="currentColor" opacity="1" data-original="#000000" class=""></path></g></g>
+                            </svg>
+                            <svg class="size-8 sm:size-10 text-primary" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 48 48" style="enable-background:new 0 0 512 512" xml:space="preserve"><g transform="matrix(0.840000000000001,0,0,0.840000000000001,-1.1600000000000392,3.9199999999999733)"><g data-name="Single Bed">
+                                <path d="M42 42h-6v1a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2zM12 42H6v1a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2zM33 19v1H15v-1a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z" fill="currentColor" opacity="1" data-original="#000000" class=""></path><path d="M34 4H14a7.008 7.008 0 0 0-7 7v9.94a8.988 8.988 0 0 1 4-.94h2v-1a6 6 0 0 1 6-6h10a6 6 0 0 1 6 6v1h2a8.988 8.988 0 0 1 4 .94V11a7.008 7.008 0 0 0-7-7zM4 34v4a2 2 0 0 0 2 2h36a2 2 0 0 0 2-2v-4zM44 32v-3a7 7 0 0 0-7-7H11a7 7 0 0 0-7 7v3z" fill="currentColor" opacity="1" data-original="#000000" class=""></path></g></g>
+                            </svg>
+                        </p>
+                    </div>
+
+                    <x-parts.room-details />
+                </div>
+            </div>
+        </section>
+
+
+
 
         {{-- Modal za md: i veće --}}
         <div class="hidden md:flex">
