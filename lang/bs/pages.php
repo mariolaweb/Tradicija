@@ -119,5 +119,21 @@ return [
     'rooms-text' => 'Dobrodošli u sobe Restorana Tradicija - vaš dom u srcu Banjaluke. Naš smještaj nudi moderno uređene i udobne dvokrevetne sobe idealne za poslovna putovanja, vikend odmor ili duži boravak. Svaka soba opremljena je klimom, Wi-Fi internetom, TV-om i privatnim kupatilom, uz besplatan privatni parking za goste. Nalazimo se na mirnoj lokaciji, svega nekoliko minuta od centra grada, što nas čini savršenim izborom za sve koji traže smještaj u Banjaluci koji spaja udobnost, praktičnost i pristupačnost. Rezervacije su moguće online ili putem telefona, a naše ljubazno osoblje pobrinuće se da vaš boravak bude opušten, prijatan i nezaboravan.',
     'reception-title' => 'Recepcija',
     'reception-text' => 'Za rezervaciju soba i provjeru smještaja u Banjaluci, Pozovite recepciju Restorana Tradicija telefonom, ili kontaktirajte putem Vibera ili WhatsApp',
+    '' => '',
+    '' => '',
+    'double-room' => 'Soba sa 1 bračnim krevetom',
+    'twin-room' => 'Soba sa 2 odvojena kreveta',
+    'klima' => 'Klimatizacija',
+    'cable-tv' => 'Kablovska TV',
+    'tv' => 'Televizor',
+    'wi-fi' => 'Wi-Fi',
+    'grijanje' => 'Grijanje',
+    'tus-kabina' => 'Tuš kabina',
+    'rucnici' => 'Ručnici',
+    'sef' => 'Sef',
+    'fen' => 'Fen',
+    'ogrtaci' => 'Ogrtači',
+    'papuce' => 'Papuče',
+
 
 ];

@@ -2,100 +2,100 @@
 
     <div class="flex items-center space-x-2">
         <img src="{{ asset('images/svg/klimatizacija.svg') }}"
-            class="size-6" alt="Internet" >
+            class="size-6" alt="@lang('pages.klima')" >
         <p
             class="overflow-hidden font-medium text-gray-600 capitalize truncate">
-            Klimatizacija
+            @lang('pages.klima')
         </p>
     </div>
 
     <div class="flex items-center space-x-2">
         <img src="{{ asset('images/svg/internet.svg') }}"
-            class="size-6" alt="Internet" >
+            class="size-6" alt="@lang('pages.wi-fi')" >
         <p
             class="overflow-hidden font-medium text-gray-600 capitalize truncate">
-            Internet
+            @lang('pages.wi-fi')
         </p>
     </div>
 
     <div class="flex items-center space-x-2">
         <img src="{{ asset('images/svg/televizor.svg') }}"
-            class="size-6" alt="Televizor" >
+            class="size-6" alt="@lang('pages.tv')" >
         <p
             class="overflow-hidden font-medium text-gray-600 capitalize truncate">
-            Televizor
+            @lang('pages.tv')
         </p>
     </div>
 
     <div class="flex items-center space-x-2">
         <img src="{{ asset('images/svg/kablovska.svg') }}"
-            class="size-6" alt="Kablovska" >
+            class="size-6" alt="@lang('pages.cable-tv')" >
         <p
             class="overflow-hidden font-medium text-gray-600 capitalize truncate">
-            Kablovska
+            @lang('pages.cable-tv')
         </p>
     </div>
 
     <div class="flex items-center space-x-2">
         <img src="{{ asset('images/svg/grijanje.svg') }}"
-            class="size-6" alt="Grijanje" >
+            class="size-6" alt="@lang('pages.grijanje')" >
         <p
             class="overflow-hidden font-medium text-gray-600 capitalize truncate">
-            Grijanje
+            @lang('pages.grijanje')
         </p>
     </div>
 
     <div class="flex items-center space-x-2">
         <img src="{{ asset('images/svg/sef.svg') }}"
-            class="size-6" alt="Sef" >
+            class="size-6" alt="@lang('pages.sef')" >
         <p
             class="overflow-hidden font-medium text-gray-600 capitalize truncate">
-            Sef
+            @lang('pages.sef')
         </p>
     </div>
 
     <div class="flex items-center space-x-2">
         <img src="{{ asset('images/svg/tus-kabina.svg') }}"
-            class="size-6" alt="Tuš kabina" >
+            class="size-6" alt="@lang('pages.tus-kabina')" >
         <p
             class="overflow-hidden font-medium text-gray-600 capitalize truncate">
-            Tuš kabina
+            @lang('pages.tus-kabina')
         </p>
     </div>
 
     <div class="flex items-center space-x-2">
         <img src="{{ asset('images/svg/ogrtaci.svg') }}"
-            class="size-6" alt="Ogrtači" >
+            class="size-6" alt="@lang('pages.ogrtaci')" >
         <p
             class="overflow-hidden font-medium text-gray-600 capitalize truncate">
-            Ogrtači
+            @lang('pages.ogrtaci')
         </p>
     </div>
 
     <div class="flex items-center space-x-2">
         <img src="{{ asset('images/svg/rucnici.svg') }}"
-            class="size-6" alt="Ručnici" >
+            class="size-6" alt="@lang('pages.rucnici')" >
         <p
             class="overflow-hidden font-medium text-gray-600 capitalize truncate">
-            Ručnici
+            @lang('pages.rucnici')
         </p>
     </div>
 
     <div class="flex items-center space-x-2">
         <img src="{{ asset('images/svg/papuce.svg') }}"
-            class="size-6" alt="Papuče" >
+            class="size-6" alt="@lang('pages.papuce')" >
         <p
             class="overflow-hidden font-medium text-gray-600 capitalize truncate">
-            Papuče
+            @lang('pages.papuce')
         </p>
     </div>
 
     <div class="flex items-center space-x-2">
         <img src="{{ asset('images/svg/fen.svg') }}"
-            class="size-6" alt="Fen" >
+            class="size-6" alt="@lang('pages.fen')" >
         <p
             class="overflow-hidden font-medium text-gray-600 capitalize truncate">
-            Fen
+            @lang('pages.fen')
         </p>
     </div>
 </div>
