@@ -262,7 +262,7 @@
 
 
         {{-- Vrste soba --}}
-        <section class="flex flex-col px-2 mt-20">
+        <section class="flex flex-col px-2 mt-16">
             <div class="flex items-center mx-auto border-l-8 border-primary">
                     <div class="min-w-0 pl-3">
                         <h2
@@ -276,7 +276,7 @@
                     @lang('pages.rooms-text')
                 </p> --}}
 
-            <div class="flex flex-col w-full gap-4 mt-10 lg:flex-row">
+            <div class="flex flex-col w-full gap-4 mt-8 lg:flex-row">
                 <div class="flex flex-col w-full p-2 mx-auto bg-white rounded-lg shadow sm:w-4/5 lg:w-1/2">
 
                     <div class="flex flex-col items-center w-full p-2 rounded-md bg-primary/20">
