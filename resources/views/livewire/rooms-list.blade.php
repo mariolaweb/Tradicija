@@ -263,7 +263,7 @@
 
         {{-- Vrste soba --}}
         <section class="flex flex-col px-2 mt-20">
-            <div class="flex flex-col w-full gap-3 md:gap-4 lg:flex-row">
+            <div class="flex flex-col w-full gap-4 lg:flex-row">
                 <div class="flex flex-col w-full p-2 mx-auto bg-white rounded-lg shadow sm:w-4/5 lg:w-1/2">
 
                     <div class="flex flex-col items-center w-full p-2 rounded-md bg-primary/20">
