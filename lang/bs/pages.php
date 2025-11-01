@@ -135,5 +135,18 @@ return [
     'ogrtaci' => 'Ogrtači',
     'papuce' => 'Papuče',
 
+    'property-rules' => 'Kućni red u objektu',
+    'check-in' => 'Prijava i ulazak u ovaj objekat su dostupni svakoga dana u terminu od 12:00 do 14:00 Prilikom prijave potrebno je priložiti validan identifikacioni dokument.',
+    'check-out' => 'Odjava i izlazak iz objekta predviđen je najkasnije do 10:00 do 12:00 narednog dana.',
+    'kids-rule-1' => 'Pravila za boravak djece',
+    'kids-rule-1.1' => 'U ovom objektu nije dozvoljen boravak djece.',
+    'kids-rule-2' => 'Pravila o dječjim krevetima i pomoćnim ležajevima',
+    'kids-rule-2.1' => 'Dječji kreveti i pomoćni ležajevi nisu dostupni u ovom objektu.',
+    'party' => 'Zabave u ovim smještajnim jedinicama nisu dozvoljene.',
+    'smoking' => 'U sobama nije dozvoljeno pušenje.',
+    'pets' => 'Boravak kućnih ljubimaca nije dozvoljen u sobama.',
+    'bill-1' => 'Plaćanje se vrši putem platnih kartica Visa i MasterCard.',
+    'bill-2' => 'Nije dostupno plaćanje u gotovini!',
+
 
 ];

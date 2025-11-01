@@ -142,6 +142,20 @@ If you don’t find what you’re looking for, feel free to give us a call or se
     'ogrtaci' => 'Bathrobes',
     'papuce' => 'Slippers',
 
+    'property-rules' => 'Property rules',
+    'check-in' => 'Check-in is available daily between 12:00 PM and 2:00 PM. A valid ID document is required upon arrival.',
+    'check-out' => 'Check-out must be completed between 10:00 AM and 12:00 PM on the day of departure.',
+    'kids-rule-1' => 'Children Stay Policy',
+    'kids-rule-1.1' => 'Children are not allowed to stay at this property.',
+    'kids-rule-2' => 'Policy on Baby Cots and Extra Beds',
+    'kids-rule-2.1' => 'Baby cots and extra beds are not available at this property.',
+    'party' => 'Parties and events are not allowed in these accommodation units.',
+    'smoking' => 'Smoking is not allowed in the rooms.',
+    'pets' => 'Pets are not allowed in the rooms.',
+    'bill-1' => 'Payment can be made by Visa and MasterCard credit cards.',
+    'bill-2' => 'Cash payments are not accepted!',
+
+
 
 
 ];

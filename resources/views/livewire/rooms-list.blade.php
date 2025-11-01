@@ -180,10 +180,10 @@
                     <div class="group">
                         <a href="tel:+38766156666"
                             class="inline-flex items-center px-3 py-1 duration-300 bg-white rounded-lg shadow group-hover:bg-primary/20 lg:px-6">
-                            <svg class="mr-1.5 size-8 text-primary sm:mr-3"
-                                xmlns="http://www.w3.org/2000/svg" version="1.1"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0"
-                                viewBox="0 0 480 480" style="enable-background:new 0 0 512 512" xml:space="preserve">
+                            <svg class="mr-1.5 size-8 text-primary sm:mr-3" xmlns="http://www.w3.org/2000/svg"
+                                version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512"
+                                x="0" y="0" viewBox="0 0 480 480" style="enable-background:new 0 0 512 512"
+                                xml:space="preserve">
                                 <g>
                                     <path
                                         d="M256 128c-8.832 0-16 7.168-16 16s7.168 16 16 16c35.296 0 64 28.704 64 64 0 8.832 7.168 16 16 16s16-7.168 16-16c0-52.928-43.072-96-96-96z"
@@ -205,13 +205,13 @@
                         </a>
                     </div>
 
-                    <div class="flex px-4 py-1.5 duration-300 bg-white rounded-lg shadow hover:bg-primary/20">
+                    <div class="flex rounded-lg bg-white px-4 py-1.5 shadow duration-300 hover:bg-primary/20">
                         <a href="https://api.whatsapp.com/send?phone=38766156666">
                             <img src="{{ asset('images/svg/icon-whatsapp.svg') }}" alt="WhatsApp" class="size-9">
                         </a>
                     </div>
 
-                    <div class="flex px-4 py-1.5 duration-300 bg-white rounded-lg shadow hover:bg-primary/20">
+                    <div class="flex rounded-lg bg-white px-4 py-1.5 shadow duration-300 hover:bg-primary/20">
                         <a href="viber://chat?number=%2b38766156666">
                             <img src="{{ asset('images/svg/icon-viber.svg') }}" alt="Viber" class="size-9">
                         </a>
@@ -264,19 +264,20 @@
         {{-- Vrste soba --}}
         <section class="flex flex-col px-2 mt-16">
             <div class="flex items-center mx-auto border-l-8 border-primary">
-                    <div class="min-w-0 pl-3">
-                        <h2
-                            class="overflow-hidden text-2xl font-medium uppercase text-ellipsis whitespace-nowrap lg:text-xl xl:text-2xl">
-                            @lang('pages.rooms')
-                        </h2>
-                    </div>
+                <div class="min-w-0 pl-3">
+                    <h2
+                        class="overflow-hidden text-2xl font-medium uppercase text-ellipsis whitespace-nowrap lg:text-xl xl:text-2xl">
+                        @lang('pages.rooms')
+                    </h2>
                 </div>
+            </div>
 
-                {{-- <p class="px-4 mt-5 lg:text-sm xl:text-base">
+            {{-- <p class="px-4 mt-5 lg:text-sm xl:text-base">
                     @lang('pages.rooms-text')
                 </p> --}}
 
             <div class="flex flex-col w-full gap-4 mt-8 lg:flex-row">
+                {{-- Double room --}}
                 <div class="flex flex-col w-full p-2 mx-auto bg-white rounded-lg shadow sm:w-4/5 lg:w-1/2">
 
                     <div class="flex flex-col items-center w-full p-2 rounded-md bg-primary/20">
@@ -290,17 +291,28 @@
                         </div>
                         <p class="inline-flex items-center mt-2 text-xl">
                             @lang('pages.double-room')
-                        <svg class="ml-3 size-8 sm:size-10 text-primary" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512" xml:space="preserve"><g transform="matrix(1.1399999999999992,0,0,1.1399999999999992,-4.479999999999976,-4.479999732971159)">
-                            <path d="M57 38.24H7a3.002 3.002 0 0 0-3 3v2.02a3.002 3.002 0 0 0 3 3h50a3.002 3.002 0 0 0 3-3v-2.02a3.002 3.002 0 0 0-3-3zM57.99 36.34v-2.79c0-2.94-2.7-5.34-6.02-5.34H12.02C8.7 28.21 6 30.61 6 33.55v2.79c.52-.134 51.67-.07 51.99 0zM48.85 48.26v1.53a2.006 2.006 0 0 0 2 2h2.3a2.006 2.006 0 0 0 2-2v-1.53zM8.85 48.26v1.53a2.006 2.006 0 0 0 2 2h2.3a2.006 2.006 0 0 0 2-2v-1.53zM15 26.21v-1.76a3.002 3.002 0 0 1 3-3h8a3.002 3.002 0 0 1 3 3v1.76h6v-1.76a3.002 3.002 0 0 1 3-3h8a3.002 3.002 0 0 1 3 3v1.76c.568-.004 3.66.02 4 .07v-9.07a5.008 5.008 0 0 0-5-5H16a5.008 5.008 0 0 0-5 5v9.07c.536-.091 4-.07 4-.07z" fill="currentColor" opacity="1" data-original="#000000" class=""></path><path d="M18 23.45a.997.997 0 0 0-1 1v1.76h10v-1.76a.997.997 0 0 0-1-1zM38 23.45a.997.997 0 0 0-1 1v1.76h10v-1.76a.997.997 0 0 0-1-1z" fill="currentColor" opacity="1" data-original="#000000" class=""></path></g>
-                        </svg>
+                            <svg class="ml-3 size-8 text-primary sm:size-10" xmlns="http://www.w3.org/2000/svg"
+                                version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512"
+                                height="512" x="0" y="0" viewBox="0 0 64 64"
+                                style="enable-background:new 0 0 512 512" xml:space="preserve">
+                                <g
+                                    transform="matrix(1.1399999999999992,0,0,1.1399999999999992,-4.479999999999976,-4.479999732971159)">
+                                    <path
+                                        d="M57 38.24H7a3.002 3.002 0 0 0-3 3v2.02a3.002 3.002 0 0 0 3 3h50a3.002 3.002 0 0 0 3-3v-2.02a3.002 3.002 0 0 0-3-3zM57.99 36.34v-2.79c0-2.94-2.7-5.34-6.02-5.34H12.02C8.7 28.21 6 30.61 6 33.55v2.79c.52-.134 51.67-.07 51.99 0zM48.85 48.26v1.53a2.006 2.006 0 0 0 2 2h2.3a2.006 2.006 0 0 0 2-2v-1.53zM8.85 48.26v1.53a2.006 2.006 0 0 0 2 2h2.3a2.006 2.006 0 0 0 2-2v-1.53zM15 26.21v-1.76a3.002 3.002 0 0 1 3-3h8a3.002 3.002 0 0 1 3 3v1.76h6v-1.76a3.002 3.002 0 0 1 3-3h8a3.002 3.002 0 0 1 3 3v1.76c.568-.004 3.66.02 4 .07v-9.07a5.008 5.008 0 0 0-5-5H16a5.008 5.008 0 0 0-5 5v9.07c.536-.091 4-.07 4-.07z"
+                                        fill="currentColor" opacity="1" data-original="#000000" class="">
+                                    </path>
+                                    <path
+                                        d="M18 23.45a.997.997 0 0 0-1 1v1.76h10v-1.76a.997.997 0 0 0-1-1zM38 23.45a.997.997 0 0 0-1 1v1.76h10v-1.76a.997.997 0 0 0-1-1z"
+                                        fill="currentColor" opacity="1" data-original="#000000" class="">
+                                    </path>
+                                </g>
+                            </svg>
                         </p>
                     </div>
 
-                   <x-parts.room-details />
+                    <x-parts.room-details />
                 </div>
-
-
-
+                {{-- Twin room --}}
                 <div class="flex flex-col w-full p-2 mx-auto bg-white rounded-lg shadow sm:w-4/5 lg:w-1/2">
 
                     <div class="flex flex-col items-center w-full p-2 rounded-md bg-primary/20">
@@ -314,11 +326,41 @@
                         </div>
                         <p class="inline-flex items-center mt-2 text-xl">
                             @lang('pages.twin-room')
-                            <svg class="ml-2.5 size-8 sm:size-10 text-primary" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 48 48" style="enable-background:new 0 0 512 512" xml:space="preserve"><g transform="matrix(0.840000000000001,0,0,0.840000000000001,3.839999999999961,3.9199999999999733)"><g data-name="Single Bed">
-                                <path d="M42 42h-6v1a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2zM12 42H6v1a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2zM33 19v1H15v-1a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z" fill="currentColor" opacity="1" data-original="#000000" class=""></path><path d="M34 4H14a7.008 7.008 0 0 0-7 7v9.94a8.988 8.988 0 0 1 4-.94h2v-1a6 6 0 0 1 6-6h10a6 6 0 0 1 6 6v1h2a8.988 8.988 0 0 1 4 .94V11a7.008 7.008 0 0 0-7-7zM4 34v4a2 2 0 0 0 2 2h36a2 2 0 0 0 2-2v-4zM44 32v-3a7 7 0 0 0-7-7H11a7 7 0 0 0-7 7v3z" fill="currentColor" opacity="1" data-original="#000000" class=""></path></g></g>
+                            <svg class="ml-2.5 size-8 text-primary sm:size-10" xmlns="http://www.w3.org/2000/svg"
+                                version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512"
+                                height="512" x="0" y="0" viewBox="0 0 48 48"
+                                style="enable-background:new 0 0 512 512" xml:space="preserve">
+                                <g
+                                    transform="matrix(0.840000000000001,0,0,0.840000000000001,3.839999999999961,3.9199999999999733)">
+                                    <g data-name="Single Bed">
+                                        <path
+                                            d="M42 42h-6v1a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2zM12 42H6v1a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2zM33 19v1H15v-1a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"
+                                            fill="currentColor" opacity="1" data-original="#000000"
+                                            class=""></path>
+                                        <path
+                                            d="M34 4H14a7.008 7.008 0 0 0-7 7v9.94a8.988 8.988 0 0 1 4-.94h2v-1a6 6 0 0 1 6-6h10a6 6 0 0 1 6 6v1h2a8.988 8.988 0 0 1 4 .94V11a7.008 7.008 0 0 0-7-7zM4 34v4a2 2 0 0 0 2 2h36a2 2 0 0 0 2-2v-4zM44 32v-3a7 7 0 0 0-7-7H11a7 7 0 0 0-7 7v3z"
+                                            fill="currentColor" opacity="1" data-original="#000000"
+                                            class=""></path>
+                                    </g>
+                                </g>
                             </svg>
-                            <svg class="size-8 sm:size-10 text-primary" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 48 48" style="enable-background:new 0 0 512 512" xml:space="preserve"><g transform="matrix(0.840000000000001,0,0,0.840000000000001,-1.1600000000000392,3.9199999999999733)"><g data-name="Single Bed">
-                                <path d="M42 42h-6v1a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2zM12 42H6v1a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2zM33 19v1H15v-1a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z" fill="currentColor" opacity="1" data-original="#000000" class=""></path><path d="M34 4H14a7.008 7.008 0 0 0-7 7v9.94a8.988 8.988 0 0 1 4-.94h2v-1a6 6 0 0 1 6-6h10a6 6 0 0 1 6 6v1h2a8.988 8.988 0 0 1 4 .94V11a7.008 7.008 0 0 0-7-7zM4 34v4a2 2 0 0 0 2 2h36a2 2 0 0 0 2-2v-4zM44 32v-3a7 7 0 0 0-7-7H11a7 7 0 0 0-7 7v3z" fill="currentColor" opacity="1" data-original="#000000" class=""></path></g></g>
+                            <svg class="size-8 text-primary sm:size-10" xmlns="http://www.w3.org/2000/svg"
+                                version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512"
+                                height="512" x="0" y="0" viewBox="0 0 48 48"
+                                style="enable-background:new 0 0 512 512" xml:space="preserve">
+                                <g
+                                    transform="matrix(0.840000000000001,0,0,0.840000000000001,-1.1600000000000392,3.9199999999999733)">
+                                    <g data-name="Single Bed">
+                                        <path
+                                            d="M42 42h-6v1a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2zM12 42H6v1a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2zM33 19v1H15v-1a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"
+                                            fill="currentColor" opacity="1" data-original="#000000"
+                                            class=""></path>
+                                        <path
+                                            d="M34 4H14a7.008 7.008 0 0 0-7 7v9.94a8.988 8.988 0 0 1 4-.94h2v-1a6 6 0 0 1 6-6h10a6 6 0 0 1 6 6v1h2a8.988 8.988 0 0 1 4 .94V11a7.008 7.008 0 0 0-7-7zM4 34v4a2 2 0 0 0 2 2h36a2 2 0 0 0 2-2v-4zM44 32v-3a7 7 0 0 0-7-7H11a7 7 0 0 0-7 7v3z"
+                                            fill="currentColor" opacity="1" data-original="#000000"
+                                            class=""></path>
+                                    </g>
+                                </g>
                             </svg>
                         </p>
                     </div>
@@ -328,6 +370,191 @@
             </div>
         </section>
 
+        {{-- Kućni redi i forma --}}
+        <section class="w-full mr-auto lg:w-1/2">
+            <div class="flex flex-col w-full gap-4 px-2 mt-10">
+                <div class="flex items-center mx-auto border-l-8 border-primary">
+                    <div class="min-w-0 pl-3">
+                        <h2
+                            class="overflow-hidden text-2xl font-medium uppercase text-ellipsis whitespace-nowrap lg:text-xl xl:text-2xl">
+                            @lang('pages.property-rules')
+                        </h2>
+                    </div>
+                </div>
+                <div class="flex flex-col w-full p-2 mx-auto bg-white rounded-lg shadow sm:w-4/5 sm:p-4 lg:w-full">
+                    <div class="flex flex-col w-full">
+                        {{-- Table za kućni red 2 --}}
+                        <div class="w-full mx-auto">
+                            <div class="overflow-hidden leading-snug">
+
+                                {{-- Prijava --}}
+                                <div
+                                    class="flex flex-col w-full pb-2 mt-2 space-y-1 border-b border-primary/30 sm:flex-row sm:space-y-0">
+
+                                    <x-parts.primary-box>
+                                        <svg class="size-7 text-primary" xmlns="http://www.w3.org/2000/svg"
+                                            version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512"
+                                            height="512" x="0" y="0" viewBox="0 0 32 32"
+                                            style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                            fill-rule="evenodd" class="">
+                                            <g>
+                                                <path
+                                                    d="M6 22v4c0 .796.316 1.559.879 2.121A2.996 2.996 0 0 0 9 29h18c.796 0 1.559-.316 2.121-.879A2.996 2.996 0 0 0 30 26V11H6v5h1.001a3 3 0 0 1 5.12-2.121l3 3a2.998 2.998 0 0 1 0 4.242l-3 3A3 3 0 0 1 7.001 22zm4.586-4H3a1 1 0 0 0 0 2h7.586l-1.293 1.293a1 1 0 0 0 1.414 1.414l3-3a.999.999 0 0 0 0-1.414l-3-3a1 1 0 0 0-1.414 1.414zM24 5h-5V4a1 1 0 0 0-2 0v1h-5V4a1 1 0 0 0-2 0v1H9c-.796 0-1.559.316-2.121.879A2.996 2.996 0 0 0 6 8v1h24V8c0-.796-.316-1.559-.879-2.121A2.996 2.996 0 0 0 27 5h-1V4a1 1 0 0 0-2 0z"
+                                                    fill="currentColor" opacity="1" data-original="#000000"
+                                                    class=""></path>
+                                            </g>
+                                        </svg>
+                                    </x-parts.primary-box>
+                                    <x-parts.text-box>@lang('pages.check-in')</x-parts.primary-box>
+                                </div>
+                                {{-- Odjava --}}
+                                <div
+                                    class="flex flex-col w-full pb-2 mt-3 space-y-1 border-b border-primary/30 sm:flex-row sm:space-y-0">
+                                    <x-parts.primary-box>
+                                        <svg class="size-7 text-primary" xmlns="http://www.w3.org/2000/svg"
+                                            version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512"
+                                            height="512" x="0" y="0" viewBox="0 0 32 31"
+                                            style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                            fill-rule="evenodd" class="">
+                                            <g>
+                                                <path
+                                                    d="M2 11v15c0 .796.316 1.559.879 2.121A2.996 2.996 0 0 0 5 29h18c.796 0 1.559-.316 2.121-.879A2.996 2.996 0 0 0 26 26v-1.001a2.987 2.987 0 0 1-2.121-.878A2.987 2.987 0 0 1 23.001 22H19a3.001 3.001 0 0 1 0-6h4.001c0-.768.292-1.536.878-2.121A2.987 2.987 0 0 1 26 13.001V11zm24.586 7H19a1 1 0 0 0 0 2h7.586l-1.293 1.293a1 1 0 0 0 1.414 1.414l3-3a.999.999 0 0 0 0-1.414l-3-3a1 1 0 0 0-1.414 1.414zM20 5h-5V4a1 1 0 0 0-2 0v1H8V4a1 1 0 0 0-2 0v1H5c-.796 0-1.559.316-2.121.879A2.996 2.996 0 0 0 2 8v1h24V8c0-.796-.316-1.559-.879-2.121A2.996 2.996 0 0 0 23 5h-1V4a1 1 0 0 0-2 0z"
+                                                    fill="currentColor" opacity="1" data-original="#000000"
+                                                    class=""></path>
+                                            </g>
+                                        </svg>
+                                    </x-parts.primary-box>
+                                    <x-parts.text-box>@lang('pages.check-out')</x-parts.primary-box>
+                                </div>
+                                {{-- Pomoćni ležaj --}}
+                                <div
+                                    class="flex flex-col w-full pb-2 mt-3 space-y-1 border-b border-primary/30 sm:flex-row sm:space-y-0">
+                                    <x-parts.primary-box>
+                                        <svg class="size-7 text-primary" xmlns="http://www.w3.org/2000/svg"
+                                            version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512"
+                                            height="512" x="0" y="0" viewBox="0 0 512 512"
+                                            style="enable-background:new 0 0 512 512" xml:space="preserve">
+                                            <g>
+                                                <circle cx="358.6" cy="114.9" r="46.1" fill="currentColor"
+                                                    opacity="1" data-original="#000000" class=""></circle>
+                                                <path
+                                                    d="m494.8 270.2-63.2-76.5a60.089 60.089 0 0 0-46.3-21.8h-53.4c-17.9 0-34.9 8-46.3 21.8l-41.4 50.2-24.2-42c-10.7-18.6-30.5-30-52-30h-57.5c-21.4 0-41.2 11.4-52 30l-44.2 76.5c-7.2 12.5-2.9 28.4 9.6 35.7 12.5 7.2 28.4 2.9 35.7-9.6l16.3-28.2v140.9c0 14.4 11.7 26.1 26.1 26.1s26.1-11.7 26.1-26.1v-81.7h22.4v81.7c0 14.4 11.7 26.1 26.1 26.1 14.4 0 26.1-11.7 26.1-26.1v-153l24.5 35.9c7.4 10.8 23 11.7 31.6 1.8l22.4-25.8-14.1 65.4c-2.7 12.5 6.8 24.2 19.5 24.2h8.7v51.5c0 14.4 11.7 26.1 26.1 26.1 14.4 0 26.1-11.7 26.1-26.1v-51.5h22.4v51.5c0 14.4 11.7 26.1 26.1 26.1 14.4 0 26.1-11.7 26.1-26.1v-51.5h8.7c12.8 0 22.2-11.8 19.5-24.2L439 289.4l12.1 15.7c9.4 12.2 26.9 14.5 39.1 5.1 12.6-9.6 14.7-27.8 4.6-40z"
+                                                    fill="currentColor" opacity="1" data-original="#000000"
+                                                    class=""></path>
+                                                <circle cx="139.2" cy="114.9" r="46.1" fill="currentColor"
+                                                    opacity="1" data-original="#000000" class=""></circle>
+                                            </g>
+                                        </svg>
+                                    </x-parts.primary-box>
+                                    <x-parts.text-box>
+                                        <ul class="space-y-1">
+                                            <li class="">@lang('pages.kids-rule-1')</li>
+                                            <li class="pl-2">- @lang('pages.kids-rule-1.1')</li>
+                                            <li class="">@lang('pages.kids-rule-2')</li>
+                                            <li class="pl-2">- @lang('pages.kids-rule-2.1')</li>
+                                        </ul>
+
+                                        </x-parts.primary-box>
+                                </div>
+
+                                {{-- Zabave --}}
+                                <div
+                                    class="flex flex-col w-full pb-2 mt-3 space-y-1 border-b border-primary/30 sm:flex-row sm:space-y-0">
+                                    <x-parts.primary-box>
+                                        <svg class="size-7 text-primary" xmlns="http://www.w3.org/2000/svg"
+                                            version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512"
+                                            height="512" x="0" y="0" viewBox="0 0 512 512"
+                                            style="enable-background:new 0 0 512 512" xml:space="preserve">
+                                            <g
+                                                transform="matrix(0.9100000000000003,0,0,0.9100000000000003,23.039999999999935,23.04004394531239)">
+                                                <path
+                                                    d="M481 195c0-46.678-23.815-87.895-59.931-112.148l.03-.045c-32.575-21.842-72.496-27.589-106.336-19.151C325.166 85.26 331 109.461 331 135c0 61.035-33.184 135.894-81.494 176.92 22.671 33.895 50.204 55.08 79.036 61.211L303.936 412.5h25.681c-6.601 16.789-2.491 32.978 10.164 45.632 3.103 3.104 6.276 5.36 9.076 7.351 7.091 5.041 24.214 23.684 24.214 46.518h30c0-35.384-23.745-61.664-36.83-70.968-2.105-1.496-3.922-2.788-5.247-4.113-4.34-4.34-4.657-7.413-4.449-9.604.456-4.797 4.076-10.171 8.303-14.815h23.216l-24.605-39.369c49.13-10.444 85.815-62.147 103.667-109.243l-.022-.009C475.98 240.426 481 216.283 481 195z"
+                                                    fill="currentColor" opacity="1" data-original="#000000"
+                                                    class=""></path>
+                                                <path
+                                                    d="M301 135C301 60.561 240.439 0 166 0S31 60.561 31 135c0 67.504 49.949 163.761 117.54 178.135L123.937 352.5h15.05c-10.406 15.319-15.226 29.287-14.305 41.618.907 12.146 7.182 22.333 18.144 29.459 9.056 5.886 6.665 17.73-2.119 42.056-3.963 10.974-7.706 21.339-7.706 30.775h30c0-9.889 14.113-35.363 15.482-57.627 1.358-22.101-9.75-34.146-19.308-40.358-3.773-2.453-4.429-4.589-4.575-6.531-.755-9.967 11.026-26.686 22.759-39.393h30.705l-24.604-39.365C251.165 298.736 301 202.329 301 135z"
+                                                    fill="currentColor" opacity="1" data-original="#000000"
+                                                    class=""></path>
+                                            </g>
+                                        </svg>
+                                    </x-parts.primary-box>
+                                    <x-parts.text-box>@lang('pages.party')</x-parts.primary-box>
+                                </div>
+                                {{-- Pušenje u objektu --}}
+                                <div
+                                    class="flex flex-col w-full pb-2 mt-3 space-y-1 border-b border-primary/30 sm:flex-row sm:space-y-0">
+                                    <x-parts.primary-box>
+                                        <svg class="size-7 text-primary" xmlns="http://www.w3.org/2000/svg"
+                                            version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512"
+                                            height="512" x="0" y="0" viewBox="0 0 32 32"
+                                            style="enable-background:new 0 0 512 512" xml:space="preserve">
+                                            <g>
+                                                <g data-name="Layer 10">
+                                                    <path
+                                                        d="M0 22v4a1 1 0 0 0 1 1h7v-6H1a1 1 0 0 0-1 1zM31 21H10v6h21a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1zM16 15a5.98 5.98 0 0 0 4.227-1.747c.005-.005.011-.006.016-.01s.005-.01.01-.016a5.996 5.996 0 0 0-8.48-8.48c-.005.005-.011.006-.016.01s-.005.01-.01.016A5.996 5.996 0 0 0 16 15zm-4-6a3.955 3.955 0 0 1 .567-2.02l5.452 5.453A3.955 3.955 0 0 1 16 13a4.005 4.005 0 0 1-4-4zm8 0a3.955 3.955 0 0 1-.567 2.02l-5.452-5.453A3.955 3.955 0 0 1 16 5a4.005 4.005 0 0 1 4 4z"
+                                                        fill="currentColor" opacity="1" data-original="#000000"
+                                                        class=""></path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </x-parts.primary-box>
+                                    <x-parts.text-box>@lang('pages.smoking')</x-parts.primary-box>
+                                </div>
+                                {{-- Ljubimci --}}
+                                <div
+                                    class="flex flex-col w-full pb-2 mt-3 space-y-1 border-b border-primary/30 sm:flex-row sm:space-y-0">
+                                    <x-parts.primary-box>
+                                        <svg class="size-7 text-primary" xmlns="http://www.w3.org/2000/svg"
+                                            version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512"
+                                            height="512" x="0" y="0" viewBox="0 0 512 512"
+                                            style="enable-background:new 0 0 512 512" xml:space="preserve">
+                                            <g
+                                                transform="matrix(0.8700000000000004,0,0,0.8700000000000004,33.28003719329823,54.08626617431625)">
+                                                <path
+                                                    d="M342.383 239.352c-23.04-35.942-62.278-57.403-104.965-57.403s-81.926 21.461-104.961 57.403l-55.516 86.605c-9.21 14.367-13.46 30.969-12.293 47.996 1.168 17.031 7.649 32.89 18.739 45.875 11.097 12.973 25.761 21.84 42.406 25.645 16.644 3.804 33.707 2.18 49.34-4.692l1.047-.465c39.336-16.945 84.285-16.789 123.52.465 10.12 4.45 20.843 6.7 31.663 6.7 5.883 0 11.801-.668 17.664-2.004 16.645-3.801 31.309-12.668 42.41-25.645 11.094-12.973 17.579-28.836 18.75-45.871 1.172-17.035-3.078-33.633-12.289-48.008zM91.895 239.238c16.515-6.343 29.062-19.652 35.328-37.476 5.965-16.961 5.476-36.11-1.38-53.922-6.859-17.8-19.335-32.332-35.132-40.922-16.594-9.02-34.824-10.488-51.313-4.133-33.171 12.754-48.394 53.746-33.93 91.399 11.555 29.968 38.505 48.886 65.75 48.886a57.316 57.316 0 0 0 20.677-3.832zM199.613 171.387c41.469 0 75.207-38.438 75.207-85.684C274.82 38.445 241.082 0 199.613 0c-41.465 0-75.199 38.445-75.199 85.703 0 47.246 33.734 85.684 75.2 85.684zM329.496 192.438h.004a61.3 61.3 0 0 0 19.367 3.128c30.242 0 59.715-22.011 70.961-55.84 6.477-19.472 6.05-40.062-1.2-57.972-7.585-18.75-21.644-32.36-39.589-38.324-17.95-5.965-37.36-3.477-54.66 7-16.527 10.007-29.192 26.246-35.66 45.718-13.653 41.079 4.64 84.274 40.777 96.29zM487.875 182.438l-.012-.012c-28.597-21.125-71.367-11.969-95.347 20.422-23.957 32.406-20.211 75.972 8.343 97.113 10.414 7.715 22.72 11.402 35.313 11.402 21.95 0 44.785-11.203 60.05-31.804 23.954-32.407 20.212-75.973-8.347-97.122zm0 0"
+                                                    fill="currentColor" opacity="1" data-original="#000000"
+                                                    class=""></path>
+                                            </g>
+                                        </svg>
+                                    </x-parts.primary-box>
+                                    <x-parts.text-box>@lang('pages.pets')</x-parts.primary-box>
+                                </div>
+
+                                {{-- Načini plaćanja --}}
+                                <div class="flex flex-col w-full mt-3 space-y-1 sm:flex-row sm:space-y-0">
+                                    <x-parts.primary-box>
+                                        <svg class="size-7 text-primary" xmlns="http://www.w3.org/2000/svg"
+                                            version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512"
+                                            height="512" x="0" y="0" viewBox="0 0 60 60"
+                                            style="enable-background:new 0 0 512 512" xml:space="preserve">
+                                            <g>
+                                                <g fill="#000">
+                                                    <path
+                                                        d="M58 18v-5a4 4 0 0 0-4-4H4a4 4 0 0 0-4 4v5zM33.367 22H0v23a4 4 0 0 0 4 4h26.274A18.918 18.918 0 0 1 26 37c0-6.105 2.892-11.523 7.367-15zM4 36h13v3H4zm18 9H4v-3h18z"
+                                                        fill="currentColor" opacity="1" data-original="#000000"
+                                                        class=""></path>
+                                                    <path
+                                                        d="M45 22c-8.284 0-15 6.716-15 15s6.716 15 15 15 15-6.716 15-15-6.716-15-15-15zm-1 22.828-7.414-7.414 2.828-2.828L44 39.172l7.586-7.586 2.828 2.828z"
+                                                        fill="currentColor" opacity="1" data-original="#000000"
+                                                        class=""></path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </x-parts.primary-box>
+                                    <x-parts.text-box>
+                                        <div class="flex flex-col space-y-1">
+                                            <p class="">@lang('pages.bill-1')</p>
+                                            <p class="pb-1">*@lang('pages.bill-2')</p>
+                                        </div>
+                                        </x-parts.primary-box>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
 
