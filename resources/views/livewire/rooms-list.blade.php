@@ -284,7 +284,7 @@
                         <div class="flex items-center mx-auto border-l-8 border-primary">
                             <div class="min-w-0 pl-3">
                                 <h2
-                                    class="overflow-hidden text-2xl font-medium uppercase text-ellipsis whitespace-nowrap lg:text-xl xl:text-2xl">
+                                    class="overflow-hidden text-xl font-medium uppercase text-ellipsis whitespace-nowrap lg:text-lg xl:text-xl">
                                     Double Room - 22 <span class="normal-case">m</span><sup>2</sup>
                                 </h2>
                             </div>
@@ -319,7 +319,7 @@
                         <div class="flex items-center mx-auto border-l-8 border-primary">
                             <div class="min-w-0 pl-3">
                                 <h2
-                                    class="overflow-hidden text-2xl font-medium uppercase text-ellipsis whitespace-nowrap lg:text-xl xl:text-2xl">
+                                    class="overflow-hidden text-xl font-medium uppercase text-ellipsis whitespace-nowrap lg:text-lg xl:text-xl">
                                     Twin Room - 20 <span class="normal-case">m</span><sup>2</sup>
                                 </h2>
                             </div>

@@ -51,7 +51,7 @@
                 <div class="flex items-center mx-auto border-l-8 border-primary">
                     <div class="min-w-0 pl-3">
                         <h2
-                            class="overflow-hidden text-2xl font-medium text-ellipsis whitespace-nowrap lg:text-xl xl:text-2xl">
+                            class="overflow-hidden text-2xl font-medium uppercase text-ellipsis whitespace-nowrap lg:text-xl xl:text-2xl">
                             TRADICIJA @lang('messages.restaurant')
                         </h2>
                     </div>
@@ -74,7 +74,7 @@
                 <div class="flex items-center mx-auto border-l-8 border-primary">
                     <div class="min-w-0 pl-3">
                         <h2
-                            class="overflow-hidden text-2xl font-medium text-ellipsis whitespace-nowrap lg:text-xl xl:text-2xl">
+                            class="overflow-hidden text-2xl font-medium uppercase text-ellipsis whitespace-nowrap lg:text-xl xl:text-2xl">
                             TRADICIJA @lang('messages.accommodation')
                         </h2>
                     </div>
