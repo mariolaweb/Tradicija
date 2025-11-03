@@ -289,7 +289,7 @@
                                 </h2>
                             </div>
                         </div>
-                        <p class="inline-flex items-center mt-2 text-xl">
+                        <p class="inline-flex items-center mt-1 text-lg">
                             @lang('pages.double-room')
                             <svg class="ml-3 size-8 text-primary sm:size-10" xmlns="http://www.w3.org/2000/svg"
                                 version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512"
@@ -324,7 +324,7 @@
                                 </h2>
                             </div>
                         </div>
-                        <p class="inline-flex items-center mt-2 text-xl">
+                        <p class="inline-flex items-center mt-1 text-lg">
                             @lang('pages.twin-room')
                             <svg class="ml-2.5 size-8 text-primary sm:size-10" xmlns="http://www.w3.org/2000/svg"
                                 version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512"
