@@ -114,7 +114,7 @@
         {{-- Telefonski poziv za rezervacije --}}
         <div class="pt-5 pb-2 md:hidden">
             <div class="flex justify-center">
-                <a href="tel:+38765520378" class="inline-flex items-center py-2">
+                <a href="tel:+38766156156" class="inline-flex items-center py-2">
                     <svg class="mr-2 text-white size-12" xmlns="http://www.w3.org/2000/svg" version="1.1"
                         xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0"
                         viewBox="0 0 66 66" style="enable-background:new 0 0 512 512" xml:space="preserve">
